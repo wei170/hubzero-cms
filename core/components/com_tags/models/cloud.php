@@ -45,6 +45,8 @@ class Cloud extends \Hubzero\Base\Object
 {
 	/**
 	 * Object type, used for linking objects (such as resources) to tags
+	 * Assign to $_scope the name to be used to uniquely identify tag data
+	 * as belong to your specific component
 	 *
 	 * @var string
 	 */

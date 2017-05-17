@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Projects\Helpers\Html
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_buildFileBrowserCrumbs" title="buildFileBrowserCrumbs :: Build breadcrumbs inside files plugin">
+            <span class="description">Build breadcrumbs inside files plugin</span><pre>buildFileBrowserCrumbs</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_cleanFileNum" title="cleanFileNum :: Replace file ending">
+            <span class="description">Replace file ending</span><pre>cleanFileNum</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_convertSize" title="convertSize :: Convert file size">
+            <span class="description">Convert file size</span><pre>convertSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_createThumbName" title="createThumbName :: Create a thumbnail name">
+            <span class="description">Create a thumbnail name</span><pre>createThumbName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_email" title="email :: Email">
+            <span class="description">Email</span><pre>email</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_fixFileName" title="fixFileName :: Append string to file name">
+            <span class="description">Append string to file name</span><pre>fixFileName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_fixUpMimeType" title="fixUpMimeType :: Fix up some mimetypes">
+            <span class="description">Fix up some mimetypes</span><pre>fixUpMimeType</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_formatTime" title="formatTime :: Specially formatted time display">
+            <span class="description">Specially formatted time display</span><pre>formatTime</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_generateCode" title="generateCode :: Generate random code">
+            <span class="description">Generate random code</span><pre>generateCode</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAdminNoteCount" title="getAdminNoteCount :: Get admin notes count">
+            <span class="description">Get admin notes count</span><pre>getAdminNoteCount</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAdminNotes" title="getAdminNotes :: Get admin notes">
+            <span class="description">Get admin notes</span><pre>getAdminNotes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAppendedNumber" title="getAppendedNumber :: Get the random number appended to file name">
+            <span class="description">Get the random number appended to file name</span><pre>getAppendedNumber</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCountArray" title="getCountArray :: Covert param to array of values">
+            <span class="description">Covert param to array of values</span><pre>getCountArray</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getEmoIcons" title="getEmoIcons :: Get array of available emotion icons">
+            <span class="description">Get array of available emotion icons</span><pre>getEmoIcons</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFileExtension" title="getFileExtension :: Get file extension">
+            <span class="description">Get file extension</span><pre>getFileExtension</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getGroupMembers" title="getGroupMembers :: Get group members">
+            <span class="description">Get group members</span><pre>getGroupMembers</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getLastAdminNote" title="getLastAdminNote :: Get last admin note">
+            <span class="description">Get last admin note</span><pre>getLastAdminNote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getNumberName" title="getNumberName :: Get name for a number">
+            <span class="description">Get name for a number</span><pre>getNumberName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getParamArray" title="getParamArray :: Covert param to array of values">
+            <span class="description">Covert param to array of values</span><pre>getParamArray</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPluginNames" title="getPluginNames :: Get tabs">
+            <span class="description">Get tabs</span><pre>getPluginNames</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProjectRepoPath" title="getProjectRepoPath :: Get project Git repo path">
+            <span class="description">Get project Git repo path</span><pre>getProjectRepoPath</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSuggestions" title="getSuggestions :: Get suggestions for new project members">
+            <span class="description">Get suggestions for new project members</span><pre>getSuggestions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getTabs" title="getTabs :: Get active tabs">
+            <span class="description">Get active tabs</span><pre>getTabs</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isBinary" title="isBinary :: Check if file is binary">
+            <span class="description">Check if file is binary</span><pre>isBinary</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_listDirHtml" title="listDirHtml :: ">
+            <span class="description"></span><pre>listDirHtml</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_makeSafeDir" title="makeSafeDir :: Makes path name safe to use.">
+            <span class="description">Makes path name safe to use.</span><pre>makeSafeDir</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_myArraySearch" title="myArraySearch :: Search for value in array">
+            <span class="description">Search for value in array</span><pre>myArraySearch</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_parseAdminNote" title="parseAdminNote :: Parse admin notes">
+            <span class="description">Parse admin notes</span><pre>parseAdminNote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_replaceEmoIcons" title="replaceEmoIcons :: Replace with emotion icons">
+            <span class="description">Replace with emotion icons</span><pre>replaceEmoIcons</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_replaceUrls" title="replaceUrls :: Replace urls in text">
+            <span class="description">Replace urls in text</span><pre>replaceUrls</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sendHUBMessage" title="sendHUBMessage :: Send hub message">
+            <span class="description">Send hub message</span><pre>sendHUBMessage</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_shortenFileName" title="shortenFileName :: Shorten file name">
+            <span class="description">Shorten file name</span><pre>shortenFileName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_shortenName" title="shortenName :: Shorten user full name">
+            <span class="description">Shorten user full name</span><pre>shortenName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_shortenText" title="shortenText :: Shorten a string to a max length, preserving whole words">
+            <span class="description">Shorten a string to a max length, preserving whole words</span><pre>shortenText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_showTime" title="showTime :: Show time since present moment or an actual date">
+            <span class="description">Show time since present moment or an actual date</span><pre>showTime</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_suggestAlias" title="suggestAlias :: Suggest alias name from title">
+            <span class="description">Suggest alias name from title</span><pre>suggestAlias</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_takeOutExt" title="takeOutExt :: Return filename without extension">
+            <span class="description">Return filename without extension</span><pre>takeOutExt</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_timeAgo" title="timeAgo :: Time elapsed from moment">
+            <span class="description">Time elapsed from moment</span><pre>timeAgo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_timeDifference" title="timeDifference :: Get time difference">
+            <span class="description">Get time difference</span><pre>timeDifference</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_virusCheck" title="virusCheck :: Check file for viruses">
+            <span class="description">Check file for viruses</span><pre>virusCheck</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Html</h1>
+                <small style="display: block; text-align: right">
+                                            Extends \Hubzero\Base\Object
+                                                        </small>
+                <p class="short_description">Html helper class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_buildFileBrowserCrumbs"></a>
+                        <div class="element clickable method public  method_buildFileBrowserCrumbs" data-toggle="collapse" data-target=".method_buildFileBrowserCrumbs .collapse">
+                            <h2>Build breadcrumbs inside files plugin</h2>
+                            <pre>buildFileBrowserCrumbs(string $dir = &#039;&#039;, string $url = &#039;&#039;,  &$parent = NULL,  $linkit = true,  $adapter = NULL,  $seperator = &#039;&amp;raquo;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$url</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parent</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$linkit</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$adapter</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$seperator</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_cleanFileNum"></a>
+                        <div class="element clickable method public  method_cleanFileNum" data-toggle="collapse" data-target=".method_cleanFileNum .collapse">
+                            <h2>Replace file ending</h2>
+                            <pre>cleanFileNum(string $path = null, string $end = &#039;&#039;, string $delim = &#039;-&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$end</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$delim</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_convertSize"></a>
+                        <div class="element clickable method public  method_convertSize" data-toggle="collapse" data-target=".method_convertSize .collapse">
+                            <h2>Convert file size</h2>
+                            <pre>convertSize(integer $file_size, string $from = &#039;b&#039;, string $to = &#039;GB&#039;, string $round) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file_size</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$from</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$to</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$round</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_createThumbName"></a>
+                        <div class="element clickable method public  method_createThumbName" data-toggle="collapse" data-target=".method_createThumbName .collapse">
+                            <h2>Create a thumbnail name</h2>
+                            <pre>createThumbName(string $image = null, string $tn = &#039;_thumb&#039;, string $ext = &#039;png&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$image</h4>
+                                                <code>string</code><p><p>Image name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$tn</h4>
+                                                <code>string</code><p><p>Thumbnail prefix</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ext</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_email"></a>
+                        <div class="element clickable method public  method_email" data-toggle="collapse" data-target=".method_email .collapse">
+                            <h2>Email</h2>
+                            <pre>email(string $email, string $subject, string $body, array $from) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$email</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subject</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$body</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$from</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_fixFileName"></a>
+                        <div class="element clickable method public  method_fixFileName" data-toggle="collapse" data-target=".method_fixFileName .collapse">
+                            <h2>Append string to file name</h2>
+                            <pre>fixFileName(string $path = null, string $append = &#039;&#039;, string $ext = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$append</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ext</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_fixUpMimeType"></a>
+                        <div class="element clickable method public  method_fixUpMimeType" data-toggle="collapse" data-target=".method_fixUpMimeType .collapse">
+                            <h2>Fix up some mimetypes</h2>
+                            <pre>fixUpMimeType(string $file = NULL, string $mimeType = NULL) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mimeType</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_formatTime"></a>
+                        <div class="element clickable method public  method_formatTime" data-toggle="collapse" data-target=".method_formatTime .collapse">
+                            <h2>Specially formatted time display</h2>
+                            <pre>formatTime(string $time, boolean $full = false, boolean $utc = false) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$time</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$full</h4>
+                                                <code>boolean</code><p><p>Return detailed date/time?</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$utc</h4>
+                                                <code>boolean</code><p><p>UTC</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_generateCode"></a>
+                        <div class="element clickable method public  method_generateCode" data-toggle="collapse" data-target=".method_generateCode .collapse">
+                            <h2>Generate random code</h2>
+                            <pre>generateCode(integer $minlength = 10, integer $maxlength = 10, boolean $usespecial, boolean $usenumbers, boolean $useletters = 1,  $mixedcaps = false) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$minlength</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$maxlength</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$usespecial</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$usenumbers</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$useletters</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mixedcaps</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>HTML</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAdminNoteCount"></a>
+                        <div class="element clickable method public  method_getAdminNoteCount" data-toggle="collapse" data-target=".method_getAdminNoteCount .collapse">
+                            <h2>Get admin notes count</h2>
+                            <pre>getAdminNoteCount(string $notes = &#039;&#039;, string $reviewer = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$notes</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reviewer</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAdminNotes"></a>
+                        <div class="element clickable method public  method_getAdminNotes" data-toggle="collapse" data-target=".method_getAdminNotes .collapse">
+                            <h2>Get admin notes</h2>
+                            <pre>getAdminNotes(string $notes = &#039;&#039;, string $reviewer = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$notes</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reviewer</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAppendedNumber"></a>
+                        <div class="element clickable method public  method_getAppendedNumber" data-toggle="collapse" data-target=".method_getAppendedNumber .collapse">
+                            <h2>Get the random number appended to file name</h2>
+                            <pre>getAppendedNumber(string $path = null) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCountArray"></a>
+                        <div class="element clickable method public  method_getCountArray" data-toggle="collapse" data-target=".method_getCountArray .collapse">
+                            <h2>Covert param to array of values</h2>
+                            <pre>getCountArray( $array = array()) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$array</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getEmoIcons"></a>
+                        <div class="element clickable method public  method_getEmoIcons" data-toggle="collapse" data-target=".method_getEmoIcons .collapse">
+                            <h2>Get array of available emotion icons</h2>
+                            <pre>getEmoIcons() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getFileExtension"></a>
+                        <div class="element clickable method public  method_getFileExtension" data-toggle="collapse" data-target=".method_getFileExtension .collapse">
+                            <h2>Get file extension</h2>
+                            <pre>getFileExtension(string $file = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getGroupMembers"></a>
+                        <div class="element clickable method public  method_getGroupMembers" data-toggle="collapse" data-target=".method_getGroupMembers .collapse">
+                            <h2>Get group members</h2>
+                            <pre>getGroupMembers(string $groupname) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$groupname</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getLastAdminNote"></a>
+                        <div class="element clickable method public  method_getLastAdminNote" data-toggle="collapse" data-target=".method_getLastAdminNote .collapse">
+                            <h2>Get last admin note</h2>
+                            <pre>getLastAdminNote(string $notes = &#039;&#039;, string $reviewer = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$notes</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reviewer</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getNumberName"></a>
+                        <div class="element clickable method public  method_getNumberName" data-toggle="collapse" data-target=".method_getNumberName .collapse">
+                            <h2>Get name for a number</h2>
+                            <pre>getNumberName(integer $int) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$int</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getParamArray"></a>
+                        <div class="element clickable method public  method_getParamArray" data-toggle="collapse" data-target=".method_getParamArray .collapse">
+                            <h2>Covert param to array of values</h2>
+                            <pre>getParamArray(string $param = &#039;&#039;) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$param</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getPluginNames"></a>
+                        <div class="element clickable method public  method_getPluginNames" data-toggle="collapse" data-target=".method_getPluginNames .collapse">
+                            <h2>Get tabs</h2>
+                            <pre>getPluginNames( &$plugins) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$plugins</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProjectRepoPath"></a>
+                        <div class="element clickable method public  method_getProjectRepoPath" data-toggle="collapse" data-target=".method_getProjectRepoPath .collapse">
+                            <h2>Get project Git repo path</h2>
+                            <pre>getProjectRepoPath(string $projectAlias = &#039;&#039;, string $case = &#039;files&#039;,  $exists = true) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectAlias</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$case</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$exists</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSuggestions"></a>
+                        <div class="element clickable method public  method_getSuggestions" data-toggle="collapse" data-target=".method_getSuggestions .collapse">
+                            <h2>Get suggestions for new project members</h2>
+                            <pre>getSuggestions( $model) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$model</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getTabs"></a>
+                        <div class="element clickable method public  method_getTabs" data-toggle="collapse" data-target=".method_getTabs .collapse">
+                            <h2>Get active tabs</h2>
+                            <pre>getTabs( &$plugins) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$plugins</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isBinary"></a>
+                        <div class="element clickable method public  method_isBinary" data-toggle="collapse" data-target=".method_isBinary .collapse">
+                            <h2>Check if file is binary</h2>
+                            <pre>isBinary(string $file) : integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_listDirHtml"></a>
+                        <div class="element clickable method public  method_listDirHtml" data-toggle="collapse" data-target=".method_listDirHtml .collapse">
+                            <h2>listDirHtml</h2>
+                            <pre>listDirHtml( $dir = null,  $currentDir = &#039;&#039;) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$currentDir</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_makeSafeDir"></a>
+                        <div class="element clickable method public  method_makeSafeDir" data-toggle="collapse" data-target=".method_makeSafeDir .collapse">
+                            <h2>Makes path name safe to use.</h2>
+                            <pre>makeSafeDir( $path) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Filesystem::cleanDirectory() is too limiting</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The sanitized string.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_myArraySearch"></a>
+                        <div class="element clickable method public  method_myArraySearch" data-toggle="collapse" data-target=".method_myArraySearch .collapse">
+                            <h2>Search for value in array</h2>
+                            <pre>myArraySearch(string $needle, string $haystack) : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$needle</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$haystack</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_parseAdminNote"></a>
+                        <div class="element clickable method public  method_parseAdminNote" data-toggle="collapse" data-target=".method_parseAdminNote .collapse">
+                            <h2>Parse admin notes</h2>
+                            <pre>parseAdminNote(string $note = &#039;&#039;, string $reviewer = &#039;&#039;, boolean $showmeta = 1, integer $shorten) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$note</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reviewer</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showmeta</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$shorten</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_replaceEmoIcons"></a>
+                        <div class="element clickable method public  method_replaceEmoIcons" data-toggle="collapse" data-target=".method_replaceEmoIcons .collapse">
+                            <h2>Replace with emotion icons</h2>
+                            <pre>replaceEmoIcons(string $text = NULL) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_replaceUrls"></a>
+                        <div class="element clickable method public  method_replaceUrls" data-toggle="collapse" data-target=".method_replaceUrls .collapse">
+                            <h2>Replace urls in text</h2>
+                            <pre>replaceUrls(string $string, string $rel = &#039;nofollow&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$string</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rel</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>HTML</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sendHUBMessage"></a>
+                        <div class="element clickable method public  method_sendHUBMessage" data-toggle="collapse" data-target=".method_sendHUBMessage .collapse">
+                            <h2>Send hub message</h2>
+                            <pre>sendHUBMessage(string $option, object $project, array $addressees = array(), string $subject = &#039;&#039;, string $component = &#039;&#039;, string $layout = &#039;admin&#039;, string $message = &#039;&#039;, string $reviewer = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$option</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$project</h4>
+                                                <code>object</code><p><p>Models\Project</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$addressees</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subject</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$component</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$layout</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reviewer</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_shortenFileName"></a>
+                        <div class="element clickable method public  method_shortenFileName" data-toggle="collapse" data-target=".method_shortenFileName .collapse">
+                            <h2>Shorten file name</h2>
+                            <pre>shortenFileName(string $name, integer $chars = 30) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$chars</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_shortenName"></a>
+                        <div class="element clickable method public  method_shortenName" data-toggle="collapse" data-target=".method_shortenName .collapse">
+                            <h2>Shorten user full name</h2>
+                            <pre>shortenName(string $name, integer $chars = 12) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$chars</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_shortenText"></a>
+                        <div class="element clickable method public  method_shortenText" data-toggle="collapse" data-target=".method_shortenText .collapse">
+                            <h2>Shorten a string to a max length, preserving whole words</h2>
+                            <pre>shortenText(string $text, integer $chars = 300) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>string</code><p><p>String to shorten</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$chars</h4>
+                                                <code>integer</code><p><p>Max length to allow</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_showTime"></a>
+                        <div class="element clickable method public  method_showTime" data-toggle="collapse" data-target=".method_showTime .collapse">
+                            <h2>Show time since present moment or an actual date</h2>
+                            <pre>showTime(string $time, boolean $utc = false) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$time</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$utc</h4>
+                                                <code>boolean</code><p><p>UTC</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_suggestAlias"></a>
+                        <div class="element clickable method public  method_suggestAlias" data-toggle="collapse" data-target=".method_suggestAlias .collapse">
+                            <h2>Suggest alias name from title</h2>
+                            <pre>suggestAlias(string $title = &#039;&#039;,  $maxLength = 30) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$maxLength</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_takeOutExt"></a>
+                        <div class="element clickable method public  method_takeOutExt" data-toggle="collapse" data-target=".method_takeOutExt .collapse">
+                            <h2>Return filename without extension</h2>
+                            <pre>takeOutExt(string $filename = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p><p>Filename string to shorten</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_timeAgo"></a>
+                        <div class="element clickable method public  method_timeAgo" data-toggle="collapse" data-target=".method_timeAgo .collapse">
+                            <h2>Time elapsed from moment</h2>
+                            <pre>timeAgo(string $timestamp, boolean $utc = true) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$timestamp</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$utc</h4>
+                                                <code>boolean</code><p><p>UTC</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_timeDifference"></a>
+                        <div class="element clickable method public  method_timeDifference" data-toggle="collapse" data-target=".method_timeDifference .collapse">
+                            <h2>Get time difference</h2>
+                            <pre>timeDifference(string $difference) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$difference</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_virusCheck"></a>
+                        <div class="element clickable method public  method_virusCheck" data-toggle="collapse" data-target=".method_virusCheck .collapse">
+                            <h2>Check file for viruses</h2>
+                            <pre>virusCheck(string $fpath = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fpath</h4>
+                                                <code>string</code><p><p>Full path to scanned file</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\Components\Projects\Helpers\Html"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Projects.Helpers.html">Helpers</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Projects.Helpers.Html.html">Html</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:10 +0000.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Tools\Tables\Version
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Short description for &#039;__construct&#039;">
+            <span class="description">Short description for &#039;__construct&#039;</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_check" title="check :: Short description for &#039;check&#039;">
+            <span class="description">Short description for &#039;check&#039;</span><pre>check</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_compileResource" title="compileResource :: Short description for &#039;compileResource&#039;">
+            <span class="description">Short description for &#039;compileResource&#039;</span><pre>compileResource</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAll" title="getAll :: Short description for &#039;getAll&#039;">
+            <span class="description">Short description for &#039;getAll&#039;</span><pre>getAll</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCurrentVersionProperty" title="getCurrentVersionProperty :: Short description for &#039;getCurrentVersionProperty&#039;">
+            <span class="description">Short description for &#039;getCurrentVersionProperty&#039;</span><pre>getCurrentVersionProperty</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDevVersionProperty" title="getDevVersionProperty :: Short description for &#039;getDevVersionProperty&#039;">
+            <span class="description">Short description for &#039;getDevVersionProperty&#039;</span><pre>getDevVersionProperty</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getToolname" title="getToolname :: Short description for &#039;getToolname&#039;">
+            <span class="description">Short description for &#039;getToolname&#039;</span><pre>getToolname</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getToolVersions" title="getToolVersions :: Short description for &#039;getToolVersions&#039;">
+            <span class="description">Short description for &#039;getToolVersions&#039;</span><pre>getToolVersions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getVersionIdFromResource" title="getVersionIdFromResource :: Short description for &#039;getVersionIdFromResource&#039;">
+            <span class="description">Short description for &#039;getVersionIdFromResource&#039;</span><pre>getVersionIdFromResource</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getVersionInfo" title="getVersionInfo :: Short description for &#039;getVersionInfo&#039;">
+            <span class="description">Short description for &#039;getVersionInfo&#039;</span><pre>getVersionInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getVersions" title="getVersions :: Short description for &#039;getVersions&#039;">
+            <span class="description">Short description for &#039;getVersions&#039;</span><pre>getVersions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_load_version" title="load_version :: Short description for &#039;load_version&#039;">
+            <span class="description">Short description for &#039;load_version&#039;</span><pre>load_version</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_loadFromInstance" title="loadFromInstance :: Short description for &#039;loadFromInstance&#039;">
+            <span class="description">Short description for &#039;loadFromInstance&#039;</span><pre>loadFromInstance</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_loadFromName" title="loadFromName :: Short description for &#039;loadFromName&#039;">
+            <span class="description">Short description for &#039;loadFromName&#039;</span><pre>loadFromName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_save" title="save :: Short description for &#039;save&#039;">
+            <span class="description">Short description for &#039;save&#039;</span><pre>save</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setUnpublishDate" title="setUnpublishDate :: Short description for &#039;setUnpublishDate&#039;">
+            <span class="description">Short description for &#039;setUnpublishDate&#039;</span><pre>setUnpublishDate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_store" title="store :: Short description for &#039;store&#039;">
+            <span class="description">Short description for &#039;store&#039;</span><pre>store</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_unpublish" title="unpublish :: Short description for &#039;unpublish&#039;">
+            <span class="description">Short description for &#039;unpublish&#039;</span><pre>unpublish</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_validLicense" title="validLicense :: Short description for &#039;validLicense&#039;">
+            <span class="description">Short description for &#039;validLicense&#039;</span><pre>validLicense</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_validToolReg" title="validToolReg :: Short description for &#039;validToolReg&#039;">
+            <span class="description">Short description for &#039;validToolReg&#039;</span><pre>validToolReg</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_validVersion" title="validVersion :: Short description for &#039;validVersion&#039;">
+            <span class="description">Short description for &#039;validVersion&#039;</span><pre>validVersion</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Version</h1>
+                <small style="display: block; text-align: right">
+                                            Extends \JTable
+                                                        </small>
+                <p class="short_description">Table class for a tool version</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Short description for &#039;__construct&#039;</h2>
+                            <pre>__construct( &$db) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$db</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_check"></a>
+                        <div class="element clickable method public  method_check" data-toggle="collapse" data-target=".method_check .collapse">
+                            <h2>Short description for &#039;check&#039;</h2>
+                            <pre>check() : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_compileResource"></a>
+                        <div class="element clickable method public  method_compileResource" data-toggle="collapse" data-target=".method_compileResource .collapse">
+                            <h2>Short description for &#039;compileResource&#039;</h2>
+                            <pre>compileResource(object $thistool, mixed $curtool = &#039;&#039;, mixed $resource, string $revision, object $config) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$thistool</h4>
+                                                <code>object</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$curtool</h4>
+                                                <code>mixed</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$resource</h4>
+                                                <code>mixed</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$revision</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$config</h4>
+                                                <code>object</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAll"></a>
+                        <div class="element clickable method public  method_getAll" data-toggle="collapse" data-target=".method_getAll .collapse">
+                            <h2>Short description for &#039;getAll&#039;</h2>
+                            <pre>getAll(integer $includedev = 1) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$includedev</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCurrentVersionProperty"></a>
+                        <div class="element clickable method public  method_getCurrentVersionProperty" data-toggle="collapse" data-target=".method_getCurrentVersionProperty .collapse">
+                            <h2>Short description for &#039;getCurrentVersionProperty&#039;</h2>
+                            <pre>getCurrentVersionProperty(string $toolname, string $property) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDevVersionProperty"></a>
+                        <div class="element clickable method public  method_getDevVersionProperty" data-toggle="collapse" data-target=".method_getDevVersionProperty .collapse">
+                            <h2>Short description for &#039;getDevVersionProperty&#039;</h2>
+                            <pre>getDevVersionProperty(string $toolname, string $property) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getToolname"></a>
+                        <div class="element clickable method public  method_getToolname" data-toggle="collapse" data-target=".method_getToolname .collapse">
+                            <h2>Short description for &#039;getToolname&#039;</h2>
+                            <pre>getToolname(string $instance) : \Components\Tools\Tables\unknown</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$instance</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Tools\Tables\unknown</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getToolVersions"></a>
+                        <div class="element clickable method public  method_getToolVersions" data-toggle="collapse" data-target=".method_getToolVersions .collapse">
+                            <h2>Short description for &#039;getToolVersions&#039;</h2>
+                            <pre>getToolVersions(string $toolid,  &$versions, string $toolname = &#039;&#039;, integer $exclude_dev) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolid</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$versions</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$exclude_dev</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getVersionIdFromResource"></a>
+                        <div class="element clickable method public  method_getVersionIdFromResource" data-toggle="collapse" data-target=".method_getVersionIdFromResource .collapse">
+                            <h2>Short description for &#039;getVersionIdFromResource&#039;</h2>
+                            <pre>getVersionIdFromResource(string $rid = NULL, string $version = &#039;dev&#039;) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rid</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$version</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getVersionInfo"></a>
+                        <div class="element clickable method public  method_getVersionInfo" data-toggle="collapse" data-target=".method_getVersionInfo .collapse">
+                            <h2>Short description for &#039;getVersionInfo&#039;</h2>
+                            <pre>getVersionInfo(string $id, string $version = &#039;&#039;, string $toolname = &#039;&#039;, string $instance = &#039;&#039;) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$version</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$instance</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getVersions"></a>
+                        <div class="element clickable method public  method_getVersions" data-toggle="collapse" data-target=".method_getVersions .collapse">
+                            <h2>Short description for &#039;getVersions&#039;</h2>
+                            <pre>getVersions(string $alias) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$alias</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_load_version"></a>
+                        <div class="element clickable method public  method_load_version" data-toggle="collapse" data-target=".method_load_version .collapse">
+                            <h2>Short description for &#039;load_version&#039;</h2>
+                            <pre>load_version(string $toolid = NULL, string $version = &#039;dev&#039;) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolid</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$version</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadFromInstance"></a>
+                        <div class="element clickable method public  method_loadFromInstance" data-toggle="collapse" data-target=".method_loadFromInstance .collapse">
+                            <h2>Short description for &#039;loadFromInstance&#039;</h2>
+                            <pre>loadFromInstance(string $tool = NULL) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$tool</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadFromName"></a>
+                        <div class="element clickable method public  method_loadFromName" data-toggle="collapse" data-target=".method_loadFromName .collapse">
+                            <h2>Short description for &#039;loadFromName&#039;</h2>
+                            <pre>loadFromName(string $alias) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$alias</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_save"></a>
+                        <div class="element clickable method public  method_save" data-toggle="collapse" data-target=".method_save .collapse">
+                            <h2>Short description for &#039;save&#039;</h2>
+                            <pre>save(\Components\Tools\Tables\unknown $toolid = NULL, string $version = &#039;dev&#039;, integer $create_new) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolid</h4>
+                                                <code>\Components\Tools\Tables\unknown</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$version</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$create_new</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setUnpublishDate"></a>
+                        <div class="element clickable method public  method_setUnpublishDate" data-toggle="collapse" data-target=".method_setUnpublishDate .collapse">
+                            <h2>Short description for &#039;setUnpublishDate&#039;</h2>
+                            <pre>setUnpublishDate(\Components\Tools\Tables\unknown $toolid = NULL, string $toolname = &#039;&#039;, mixed $vid) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolid</h4>
+                                                <code>\Components\Tools\Tables\unknown</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$vid</h4>
+                                                <code>mixed</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_store"></a>
+                        <div class="element clickable method public  method_store" data-toggle="collapse" data-target=".method_store .collapse">
+                            <h2>Short description for &#039;store&#039;</h2>
+                            <pre>store( $updateNulls = false) : \Components\Tools\Tables\unknown</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$updateNulls</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Tools\Tables\unknown</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_unpublish"></a>
+                        <div class="element clickable method public  method_unpublish" data-toggle="collapse" data-target=".method_unpublish .collapse">
+                            <h2>Short description for &#039;unpublish&#039;</h2>
+                            <pre>unpublish(string $toolid = NULL, mixed $vid) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolid</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$vid</h4>
+                                                <code>mixed</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_validLicense"></a>
+                        <div class="element clickable method public  method_validLicense" data-toggle="collapse" data-target=".method_validLicense .collapse">
+                            <h2>Short description for &#039;validLicense&#039;</h2>
+                            <pre>validLicense(\Components\Tools\Tables\unknown $toolname, array $license, string $code,  &$error, integer $result) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>\Components\Tools\Tables\unknown</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$license</h4>
+                                                <code>array</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$code</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$error</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$result</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_validToolReg"></a>
+                        <div class="element clickable method public  method_validToolReg" data-toggle="collapse" data-target=".method_validToolReg .collapse">
+                            <h2>Short description for &#039;validToolReg&#039;</h2>
+                            <pre>validToolReg( &$tool,  &$err, string $id, object $config, integer $checker, integer $result = 1) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$tool</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$err</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$config</h4>
+                                                <code>object</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$checker</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$result</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_validVersion"></a>
+                        <div class="element clickable method public  method_validVersion" data-toggle="collapse" data-target=".method_validVersion .collapse">
+                            <h2>Short description for &#039;validVersion&#039;</h2>
+                            <pre>validVersion(\Components\Tools\Tables\unknown $toolname, \Components\Tools\Tables\unknown $newversion,  &$error, integer $required = 1, integer $result = 1) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Long description (if any) ...</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$toolname</h4>
+                                                <code>\Components\Tools\Tables\unknown</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newversion</h4>
+                                                <code>\Components\Tools\Tables\unknown</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$error</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$required</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$result</h4>
+                                                <code>integer</code><p><p>Parameter description (if any) ...</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>Return description (if any) ...</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\Components\Tools\Tables\Version"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Tools.Tables.html">Tables</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Tools.Tables.Version.html">Version</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:06 +0000.<br/>
+    </footer>
+    </body>
+</html>

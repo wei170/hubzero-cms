@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Projects\Helpers\Connect
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Constructor">
+            <span class="description">Constructor</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addRemoteFile" title="addRemoteFile :: Add remote file">
+            <span class="description">Add remote file</span><pre>addRemoteFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_afterConnect" title="afterConnect :: Prepare service for use or confirm it&#039;s ready">
+            <span class="description">Prepare service for use or confirm it&#039;s ready</span><pre>afterConnect</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_createAuthUrl" title="createAuthUrl :: Create authentication URL">
+            <span class="description">Create authentication URL</span><pre>createAuthUrl</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_createRemoteFolder" title="createRemoteFolder :: Create remote folder">
+            <span class="description">Create remote folder</span><pre>createRemoteFolder</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deleteRemoteItem" title="deleteRemoteItem :: Delete remote item">
+            <span class="description">Delete remote item</span><pre>deleteRemoteItem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_disconnect" title="disconnect :: Disconnect user from service">
+            <span class="description">Disconnect user from service</span><pre>disconnect</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_disconnectMember" title="disconnectMember :: Disconnect user from service">
+            <span class="description">Disconnect user from service</span><pre>disconnectMember</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_downloadFile" title="downloadFile :: Download remote content">
+            <span class="description">Download remote content</span><pre>downloadFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_downloadFileCurl" title="downloadFileCurl :: Download remote content via cURL">
+            <span class="description">Download remote content via cURL</span><pre>downloadFileCurl</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_fetchFile" title="fetchFile :: Fetch file">
+            <span class="description">Fetch file</span><pre>fetchFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_fixConvertedItems" title="fixConvertedItems :: Fix connection record(s) after local change to parent folder">
+            <span class="description">Fix connection record(s) after local change to parent folder</span><pre>fixConvertedItems</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_generateThumbnail" title="generateThumbnail :: Generate local thumbnail from remote">
+            <span class="description">Generate local thumbnail from remote</span><pre>generateThumbnail</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAccessProfile" title="getAccessProfile :: Get and store access profile information">
+            <span class="description">Get and store access profile information</span><pre>getAccessProfile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getActive" title="getActive :: Get active services">
+            <span class="description">Get active services</span><pre>getActive</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAPI" title="getAPI :: Get service API">
+            <span class="description">Get service API</span><pre>getAPI</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getChangedItems" title="getChangedItems :: Get remote changes">
+            <span class="description">Get remote changes</span><pre>getChangedItems</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getConfigParam" title="getConfigParam :: Get service config param">
+            <span class="description">Get service config param</span><pre>getConfigParam</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getConfigs" title="getConfigs :: Get configuration to connect with outside services">
+            <span class="description">Get configuration to connect with outside services</span><pre>getConfigs</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getConnections" title="getConnections :: Get connections">
+            <span class="description">Get connections</span><pre>getConnections</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFileHistory" title="getFileHistory :: Get remote file history">
+            <span class="description">Get remote file history</span><pre>getFileHistory</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFileRevision" title="getFileRevision :: Get remote file revision">
+            <span class="description">Get remote file revision</span><pre>getFileRevision</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFolderStructure" title="getFolderStructure :: Get remote folder structure">
+            <span class="description">Get remote folder structure</span><pre>getFolderStructure</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getRemoteDirectory" title="getRemoteDirectory :: Get ID of remote directory and store it">
+            <span class="description">Get ID of remote directory and store it</span><pre>getRemoteDirectory</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getRemoteItems" title="getRemoteItems :: Get all remote files">
+            <span class="description">Get all remote files</span><pre>getRemoteItems</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getServices" title="getServices :: Get services">
+            <span class="description">Get services</span><pre>getServices</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getStoredParam" title="getStoredParam :: Get stored auth token for service">
+            <span class="description">Get stored auth token for service</span><pre>getStoredParam</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_importFile" title="importFile :: Import remote file">
+            <span class="description">Import remote file</span><pre>importFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isActive" title="isActive :: Is any service active?">
+            <span class="description">Is any service active?</span><pre>isActive</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_loadRemoteResource" title="loadRemoteResource :: Load remote file metadata">
+            <span class="description">Load remote file metadata</span><pre>loadRemoteResource</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_makeConnection" title="makeConnection :: Establish connection">
+            <span class="description">Establish connection</span><pre>makeConnection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_moveRemoteItem" title="moveRemoteItem :: Move remote file to another parent">
+            <span class="description">Move remote file to another parent</span><pre>moveRemoteItem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_prepRemoteParent" title="prepRemoteParent :: Prep remote directory structure for syncing file">
+            <span class="description">Prep remote directory structure for syncing file</span><pre>prepRemoteParent</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_refreshToken" title="refreshToken :: Refresh service token">
+            <span class="description">Refresh service token</span><pre>refreshToken</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_renameRemoteItem" title="renameRemoteItem :: Rename remote file">
+            <span class="description">Rename remote file</span><pre>renameRemoteItem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_runCurl" title="runCurl :: Run cURL">
+            <span class="description">Run cURL</span><pre>runCurl</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_savePairing" title="savePairing :: Save connection of local file after being exported">
+            <span class="description">Save connection of local file after being exported</span><pre>savePairing</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sendHttpRequest" title="sendHttpRequest :: Send httpRequest">
+            <span class="description">Send httpRequest</span><pre>sendHttpRequest</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setConfigs" title="setConfigs :: Set configuration to connect with outside services">
+            <span class="description">Set configuration to connect with outside services</span><pre>setConfigs</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setUser" title="setUser :: Set user">
+            <span class="description">Set user</span><pre>setUser</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sortRemoteRevisions" title="sortRemoteRevisions :: Sort remote revisions">
+            <span class="description">Sort remote revisions</span><pre>sortRemoteRevisions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_startClient" title="startClient :: Start service client">
+            <span class="description">Start service client</span><pre>startClient</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_storeParam" title="storeParam :: Store auth token for service">
+            <span class="description">Store auth token for service</span><pre>storeParam</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_updateRemoteFile" title="updateRemoteFile :: Update remote file">
+            <span class="description">Update remote file</span><pre>updateRemoteFile</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_GOOGLE_OAUTH2_AUTH_URL" title="GOOGLE_OAUTH2_AUTH_URL :: Google auth URL">
+                        <span class="description">Google auth URL</span><pre>GOOGLE_OAUTH2_AUTH_URL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_GOOGLE_OAUTH2_REVOKE_URI" title="GOOGLE_OAUTH2_REVOKE_URI :: URL to revoke Google token">
+                        <span class="description">URL to revoke Google token</span><pre>GOOGLE_OAUTH2_REVOKE_URI</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_GOOGLE_OAUTH2_TOKEN_URI" title="GOOGLE_OAUTH2_TOKEN_URI :: URL to refresh Google token">
+                        <span class="description">URL to refresh Google token</span><pre>GOOGLE_OAUTH2_TOKEN_URI</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Connect</h1>
+                <small style="display: block; text-align: right">
+                                            Extends \Hubzero\Base\Object
+                                                        </small>
+                <p class="short_description">Projects Connect helper class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Constructor</h2>
+                            <pre>__construct(object $model = null, integer $userid, string $zone = &#039;UTC&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$model</h4>
+                                                <code>object</code><p><p>Project</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$userid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$zone</h4>
+                                                <code>string</code><p><p>Default time zone</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addRemoteFile"></a>
+                        <div class="element clickable method public  method_addRemoteFile" data-toggle="collapse" data-target=".method_addRemoteFile .collapse">
+                            <h2>Add remote file</h2>
+                            <pre>addRemoteFile(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, object $file = null,  $parentId, boolean $convert = false) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file</h4>
+                                                <code>object</code><p><p>Models\File</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parentId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$convert</h4>
+                                                <code>boolean</code><p><p>Convert for remote editing? (Google only)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_afterConnect"></a>
+                        <div class="element clickable method public  method_afterConnect" data-toggle="collapse" data-target=".method_afterConnect .collapse">
+                            <h2>Prepare service for use or confirm it&#039;s ready</h2>
+                            <pre>afterConnect(string $service = &#039;google&#039;, integer $uid) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_createAuthUrl"></a>
+                        <div class="element clickable method public  method_createAuthUrl" data-toggle="collapse" data-target=".method_createAuthUrl .collapse">
+                            <h2>Create authentication URL</h2>
+                            <pre>createAuthUrl(string $service, string $return = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code>string</code><p><p>URL to return to after authorization</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>URL</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_createRemoteFolder"></a>
+                        <div class="element clickable method public  method_createRemoteFolder" data-toggle="collapse" data-target=".method_createRemoteFolder .collapse">
+                            <h2>Create remote folder</h2>
+                            <pre>createRemoteFolder(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, string $title = &#039;&#039;, string $path = &#039;&#039;, string $parentId,  &$remoteFolders = array()) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string</code><p><p>Folder name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Path to folder</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parentId</h4>
+                                                <code>string</code><p><p>Parent folder ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteFolders</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>(folder ID)</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deleteRemoteItem"></a>
+                        <div class="element clickable method public  method_deleteRemoteItem" data-toggle="collapse" data-target=".method_deleteRemoteItem .collapse">
+                            <h2>Delete remote item</h2>
+                            <pre>deleteRemoteItem(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, string $remoteid, boolean $permanent = false) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteid</h4>
+                                                <code>string</code><p><p>Remote resource ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$permanent</h4>
+                                                <code>boolean</code><p><p>Delete permanently? (or trash)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_disconnect"></a>
+                        <div class="element clickable method public  method_disconnect" data-toggle="collapse" data-target=".method_disconnect .collapse">
+                            <h2>Disconnect user from service</h2>
+                            <pre>disconnect(string $service, boolean $removeData = false) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$removeData</h4>
+                                                <code>boolean</code><p><p>Remove remote data (when project creator)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>JSON string or false</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_disconnectMember"></a>
+                        <div class="element clickable method public  method_disconnectMember" data-toggle="collapse" data-target=".method_disconnectMember .collapse">
+                            <h2>Disconnect user from service</h2>
+                            <pre>disconnectMember(string $service, integer $uid, \Components\Projects\Helpers\itneger $remoteid) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteid</h4>
+                                                <code>\Components\Projects\Helpers\itneger</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>JSON string or false</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_downloadFile"></a>
+                        <div class="element clickable method public  method_downloadFile" data-toggle="collapse" data-target=".method_downloadFile .collapse">
+                            <h2>Download remote content</h2>
+                            <pre>downloadFile(string $service = &#039;google&#039;, integer $uid, array $remote = array(), string $path = &#039;&#039;, boolean $getContent = false) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remote</h4>
+                                                <code>array</code><p><p>Remote resource array</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Project repo path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$getContent</h4>
+                                                <code>boolean</code><p><p>Output file content? Or write to file</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>or boolean</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_downloadFileCurl"></a>
+                        <div class="element clickable method public  method_downloadFileCurl" data-toggle="collapse" data-target=".method_downloadFileCurl .collapse">
+                            <h2>Download remote content via cURL</h2>
+                            <pre>downloadFileCurl(string $service = &#039;google&#039;,  $uid,  $url = &#039;&#039;, string $path = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$url</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Project repo path</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>or boolean</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_fetchFile"></a>
+                        <div class="element clickable method public  method_fetchFile" data-toggle="collapse" data-target=".method_fetchFile .collapse">
+                            <h2>Fetch file</h2>
+                            <pre>fetchFile(string $fc = &#039;&#039;, string $fpath = &#039;&#039;, string $path = &#039;&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fc</h4>
+                                                <code>string</code><p><p>File content</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fpath</h4>
+                                                <code>string</code><p><p>File path relative to repo path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Project repo path</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_fixConvertedItems"></a>
+                        <div class="element clickable method public  method_fixConvertedItems" data-toggle="collapse" data-target=".method_fixConvertedItems .collapse">
+                            <h2>Fix connection record(s) after local change to parent folder</h2>
+                            <pre>fixConvertedItems(string $service = &#039;google&#039;, integer $uid, string $dir = &#039;&#039;, string $action = &#039;&#039;, string $newdir = &#039;&#039;, string $parentId = &#039;&#039;) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>string</code><p><p>Directory path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code>string</code><p><p>Action</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newdir</h4>
+                                                <code>string</code><p><p>New directory path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parentId</h4>
+                                                <code>string</code><p><p>Parent ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_generateThumbnail"></a>
+                        <div class="element clickable method public  method_generateThumbnail" data-toggle="collapse" data-target=".method_generateThumbnail .collapse">
+                            <h2>Generate local thumbnail from remote</h2>
+                            <pre>generateThumbnail(string $service = &#039;google&#039;, integer $uid, array $remote = array(), array $config = array(), string $alias = null) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remote</h4>
+                                                <code>array</code><p><p>Remote resource array</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$config</h4>
+                                                <code>array</code><p><p>Configuration array</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$alias</h4>
+                                                <code>string</code><p><p>Project alias name</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAccessProfile"></a>
+                        <div class="element clickable method public  method_getAccessProfile" data-toggle="collapse" data-target=".method_getAccessProfile .collapse">
+                            <h2>Get and store access profile information</h2>
+                            <pre>getAccessProfile(string $service = &#039;google&#039;, integer $uid) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getActive"></a>
+                        <div class="element clickable method public  method_getActive" data-toggle="collapse" data-target=".method_getActive .collapse">
+                            <h2>Get active services</h2>
+                            <pre>getActive() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAPI"></a>
+                        <div class="element clickable method public  method_getAPI" data-toggle="collapse" data-target=".method_getAPI .collapse">
+                            <h2>Get service API</h2>
+                            <pre>getAPI(string $service = &#039;google&#039;, integer $uid) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getChangedItems"></a>
+                        <div class="element clickable method public  method_getChangedItems" data-toggle="collapse" data-target=".method_getChangedItems .collapse">
+                            <h2>Get remote changes</h2>
+                            <pre>getChangedItems(string $service = &#039;google&#039;, integer $uid, string $startChangeId = null, array &$remotes, array &$deletes, array $connections = array(), string $path = &#039;&#039;) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$startChangeId</h4>
+                                                <code>string</code><p><p>Last Change ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remotes</h4>
+                                                <code>array</code><p><p>Collector array for active items</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$deletes</h4>
+                                                <code>array</code><p><p>Collector array for deleted items</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$connections</h4>
+                                                <code>array</code><p><p>Array of local-remote connections</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Path</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>change ID</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getConfigParam"></a>
+                        <div class="element clickable method public  method_getConfigParam" data-toggle="collapse" data-target=".method_getConfigParam .collapse">
+                            <h2>Get service config param</h2>
+                            <pre>getConfigParam(string $service = &#039;google&#039;, string $param = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$param</h4>
+                                                <code>string</code><p><p>Param name</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>string or null</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getConfigs"></a>
+                        <div class="element clickable method public  method_getConfigs" data-toggle="collapse" data-target=".method_getConfigs .collapse">
+                            <h2>Get configuration to connect with outside services</h2>
+                            <pre>getConfigs(string $service = &#039;google&#039;, boolean $active = true) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$active</h4>
+                                                <code>boolean</code><p><p>Only get active service</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>false or array with configs</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getConnections"></a>
+                        <div class="element clickable method public  method_getConnections" data-toggle="collapse" data-target=".method_getConnections .collapse">
+                            <h2>Get connections</h2>
+                            <pre>getConnections(integer $uid) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getFileHistory"></a>
+                        <div class="element clickable method public  method_getFileHistory" data-toggle="collapse" data-target=".method_getFileHistory .collapse">
+                            <h2>Get remote file history</h2>
+                            <pre>getFileHistory(string $id, integer $uid, string $service = &#039;google&#039;) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Remote ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getFileRevision"></a>
+                        <div class="element clickable method public  method_getFileRevision" data-toggle="collapse" data-target=".method_getFileRevision .collapse">
+                            <h2>Get remote file revision</h2>
+                            <pre>getFileRevision(string $id, integer $revision, integer $uid, string $service = &#039;google&#039;) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Remote ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$revision</h4>
+                                                <code>integer</code><p><p>remote revision ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getFolderStructure"></a>
+                        <div class="element clickable method public  method_getFolderStructure" data-toggle="collapse" data-target=".method_getFolderStructure .collapse">
+                            <h2>Get remote folder structure</h2>
+                            <pre>getFolderStructure(string $service = &#039;google&#039;, integer $uid,  &$remoteFolders, string $path = &#039;&#039;) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteFolders</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getRemoteDirectory"></a>
+                        <div class="element clickable method public  method_getRemoteDirectory" data-toggle="collapse" data-target=".method_getRemoteDirectory .collapse">
+                            <h2>Get ID of remote directory and store it</h2>
+                            <pre>getRemoteDirectory(string $service = &#039;google&#039;, integer $uid, array $shared = array()) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$shared</h4>
+                                                <code>array</code><p><p>Array of emails with whom master remote folder is shared</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getRemoteItems"></a>
+                        <div class="element clickable method public  method_getRemoteItems" data-toggle="collapse" data-target=".method_getRemoteItems .collapse">
+                            <h2>Get all remote files</h2>
+                            <pre>getRemoteItems(string $service = &#039;google&#039;, integer $uid, string $since = &#039;&#039;, array $connections = array()) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$since</h4>
+                                                <code>string</code><p><p>last sync date</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$connections</h4>
+                                                <code>array</code><p><p>Array of local-remote connections</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getServices"></a>
+                        <div class="element clickable method public  method_getServices" data-toggle="collapse" data-target=".method_getServices .collapse">
+                            <h2>Get services</h2>
+                            <pre>getServices() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getStoredParam"></a>
+                        <div class="element clickable method public  method_getStoredParam" data-toggle="collapse" data-target=".method_getStoredParam .collapse">
+                            <h2>Get stored auth token for service</h2>
+                            <pre>getStoredParam(string $param, integer $uid) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$param</h4>
+                                                <code>string</code><p><p>Param name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_importFile"></a>
+                        <div class="element clickable method public  method_importFile" data-toggle="collapse" data-target=".method_importFile .collapse">
+                            <h2>Import remote file</h2>
+                            <pre>importFile(string $service = &#039;google&#039;, integer $uid, array $remote = array(), string $fpath = &#039;&#039;, string $path = &#039;&#039;, string $ext = &#039;&#039;, boolean $getContent = false) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remote</h4>
+                                                <code>array</code><p><p>Remote resource array</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fpath</h4>
+                                                <code>string</code><p><p>File path relative to repo path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Project repo path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ext</h4>
+                                                <code>string</code><p><p>Extension</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$getContent</h4>
+                                                <code>boolean</code><p><p>Output file content? Or write to file</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>or boolean</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isActive"></a>
+                        <div class="element clickable method public  method_isActive" data-toggle="collapse" data-target=".method_isActive .collapse">
+                            <h2>Is any service active?</h2>
+                            <pre>isActive() : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>false or array with configs</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadRemoteResource"></a>
+                        <div class="element clickable method public  method_loadRemoteResource" data-toggle="collapse" data-target=".method_loadRemoteResource .collapse">
+                            <h2>Load remote file metadata</h2>
+                            <pre>loadRemoteResource(string $service = &#039;google&#039;, integer $uid, string $id) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Remote ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_makeConnection"></a>
+                        <div class="element clickable method public  method_makeConnection" data-toggle="collapse" data-target=".method_makeConnection .collapse">
+                            <h2>Establish connection</h2>
+                            <pre>makeConnection(string $service = &#039;google&#039;, boolean $reauth = false, string $return = &#039;&#039;) : false</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reauth</h4>
+                                                <code>boolean</code><p><p>Re-authenticate user?</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code>string</code><p><p>URL to return to after authorization</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>false</code><p><p>or array with configs</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_moveRemoteItem"></a>
+                        <div class="element clickable method public  method_moveRemoteItem" data-toggle="collapse" data-target=".method_moveRemoteItem .collapse">
+                            <h2>Move remote file to another parent</h2>
+                            <pre>moveRemoteItem(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, string $remoteid, array $local = array(), string $parentId) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteid</h4>
+                                                <code>string</code><p><p>Remote resource ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$local</h4>
+                                                <code>array</code><p><p>Array of local file info</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parentId</h4>
+                                                <code>string</code><p><p>Parent folder ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_prepRemoteParent"></a>
+                        <div class="element clickable method public  method_prepRemoteParent" data-toggle="collapse" data-target=".method_prepRemoteParent .collapse">
+                            <h2>Prep remote directory structure for syncing file</h2>
+                            <pre>prepRemoteParent(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, array $local = array(),  &$remoteFolders = array()) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$local</h4>
+                                                <code>array</code><p><p>Array of local file info</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteFolders</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_refreshToken"></a>
+                        <div class="element clickable method public  method_refreshToken" data-toggle="collapse" data-target=".method_refreshToken .collapse">
+                            <h2>Refresh service token</h2>
+                            <pre>refreshToken(string $service, string $refreshToken = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$refreshToken</h4>
+                                                <code>string</code><p><p>Stored refresh token</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>JSON string or false</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_renameRemoteItem"></a>
+                        <div class="element clickable method public  method_renameRemoteItem" data-toggle="collapse" data-target=".method_renameRemoteItem .collapse">
+                            <h2>Rename remote file</h2>
+                            <pre>renameRemoteItem(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, string $remoteid, array $local = array(), string $parentId) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteid</h4>
+                                                <code>string</code><p><p>Remote resource ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$local</h4>
+                                                <code>array</code><p><p>Array of local file info</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parentId</h4>
+                                                <code>string</code><p><p>Parent folder ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_runCurl"></a>
+                        <div class="element clickable method public  method_runCurl" data-toggle="collapse" data-target=".method_runCurl .collapse">
+                            <h2>Run cURL</h2>
+                            <pre>runCurl(string $url, string $method = &#039;GET&#039;, array $postvals = null) : \Components\Projects\Helpers\response</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$url</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$postvals</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Projects\Helpers\response</code><p><p>string</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_savePairing"></a>
+                        <div class="element clickable method public  method_savePairing" data-toggle="collapse" data-target=".method_savePairing .collapse">
+                            <h2>Save connection of local file after being exported</h2>
+                            <pre>savePairing(integer $projectid = null, string $service = &#039;&#039;, string $id = null, string $path = &#039;&#039;, integer $paired, string $original_path = &#039;&#039;, string $original_format = &#039;&#039;, string $original_id = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>Remote ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>File path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paired</h4>
+                                                <code>integer</code><p><p>Paired record ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$original_path</h4>
+                                                <code>string</code><p><p>Original path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$original_format</h4>
+                                                <code>string</code><p><p>Original MIME type</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$original_id</h4>
+                                                <code>string</code><p><p>Original ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>False if error, Object on success</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sendHttpRequest"></a>
+                        <div class="element clickable method public  method_sendHttpRequest" data-toggle="collapse" data-target=".method_sendHttpRequest .collapse">
+                            <h2>Send httpRequest</h2>
+                            <pre>sendHttpRequest(string $service = &#039;google&#039;, integer $uid, string $url = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$url</h4>
+                                                <code>string</code><p><p>Request URL</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setConfigs"></a>
+                        <div class="element clickable method public  method_setConfigs" data-toggle="collapse" data-target=".method_setConfigs .collapse">
+                            <h2>Set configuration to connect with outside services</h2>
+                            <pre>setConfigs() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setUser"></a>
+                        <div class="element clickable method public  method_setUser" data-toggle="collapse" data-target=".method_setUser .collapse">
+                            <h2>Set user</h2>
+                            <pre>setUser(integer $uid) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sortRemoteRevisions"></a>
+                        <div class="element clickable method public  method_sortRemoteRevisions" data-toggle="collapse" data-target=".method_sortRemoteRevisions .collapse">
+                            <h2>Sort remote revisions</h2>
+                            <pre>sortRemoteRevisions(integer $id, integer $converted, string $lastModifiedBy = &#039;&#039;, integer $uid, string $service, string $file,  &$versions = array(),  &$timestamps = array(), integer $original) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>integer</code><p><p>Remote resource ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$converted</h4>
+                                                <code>integer</code><p><p>Converted for remote editing?</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$lastModifiedBy</h4>
+                                                <code>string</code><p><p>Last modified by (name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file</h4>
+                                                <code>string</code><p><p>File path</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$versions</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$timestamps</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$original</h4>
+                                                <code>integer</code><p><p>Source file?</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_startClient"></a>
+                        <div class="element clickable method public  method_startClient" data-toggle="collapse" data-target=".method_startClient .collapse">
+                            <h2>Start service client</h2>
+                            <pre>startClient(string $service = &#039;google&#039;, integer $uid, boolean $force = false) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$force</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_storeParam"></a>
+                        <div class="element clickable method public  method_storeParam" data-toggle="collapse" data-target=".method_storeParam .collapse">
+                            <h2>Store auth token for service</h2>
+                            <pre>storeParam(string $param = &#039;&#039;, string $value = &#039;&#039;, integer $uid) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$param</h4>
+                                                <code>string</code><p><p>Param name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p><p>Param value</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_updateRemoteFile"></a>
+                        <div class="element clickable method public  method_updateRemoteFile" data-toggle="collapse" data-target=".method_updateRemoteFile .collapse">
+                            <h2>Update remote file</h2>
+                            <pre>updateRemoteFile(integer $projectid = null, string $service = &#039;google&#039;, integer $uid, string $remoteid, array $local = array(), string $parentId, boolean $convert = false) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$projectid</h4>
+                                                <code>integer</code><p><p>Project ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$service</h4>
+                                                <code>string</code><p><p>Service name (google or dropbox)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uid</h4>
+                                                <code>integer</code><p><p>User ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remoteid</h4>
+                                                <code>string</code><p><p>Remote resource ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$local</h4>
+                                                <code>array</code><p><p>Array of local file info</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parentId</h4>
+                                                <code>string</code><p><p>Parent folder ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$convert</h4>
+                                                <code>boolean</code><p><p>Convert for remote editing? (Google only)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_GOOGLE_OAUTH2_REVOKE_URI"> </a>
+                            <div class="element clickable constant  constant_GOOGLE_OAUTH2_REVOKE_URI" data-toggle="collapse" data-target=".constant_GOOGLE_OAUTH2_REVOKE_URI .collapse">
+                                <h2>URL to revoke Google token</h2>
+                                <pre>GOOGLE_OAUTH2_REVOKE_URI</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_GOOGLE_OAUTH2_TOKEN_URI"> </a>
+                            <div class="element clickable constant  constant_GOOGLE_OAUTH2_TOKEN_URI" data-toggle="collapse" data-target=".constant_GOOGLE_OAUTH2_TOKEN_URI .collapse">
+                                <h2>URL to refresh Google token</h2>
+                                <pre>GOOGLE_OAUTH2_TOKEN_URI</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_GOOGLE_OAUTH2_AUTH_URL"> </a>
+                            <div class="element clickable constant  constant_GOOGLE_OAUTH2_AUTH_URL" data-toggle="collapse" data-target=".constant_GOOGLE_OAUTH2_AUTH_URL .collapse">
+                                <h2>Google auth URL</h2>
+                                <pre>GOOGLE_OAUTH2_AUTH_URL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_model"> </a>
+                            <div class="element clickable property  public property_model" data-toggle="collapse" data-target=".property_model .collapse">
+                                <h2>Project</h2>
+                                <pre>model : object</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>object</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__db"> </a>
+                            <div class="element clickable property  private property__db" data-toggle="collapse" data-target=".property__db .collapse">
+                                <h2>JDatabase</h2>
+                                <pre>_db : object</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>object</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__uid"> </a>
+                            <div class="element clickable property  private property__uid" data-toggle="collapse" data-target=".property__uid .collapse">
+                                <h2>User ID</h2>
+                                <pre>_uid : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__connect"> </a>
+                            <div class="element clickable property  private property__connect" data-toggle="collapse" data-target=".property__connect .collapse">
+                                <h2>Connection configuration</h2>
+                                <pre>_connect : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__service"> </a>
+                            <div class="element clickable property  private property__service" data-toggle="collapse" data-target=".property__service .collapse">
+                                <h2>Service configuration</h2>
+                                <pre>_service : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__services"> </a>
+                            <div class="element clickable property  private property__services" data-toggle="collapse" data-target=".property__services .collapse">
+                                <h2>Available services</h2>
+                                <pre>_services : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__client"> </a>
+                            <div class="element clickable property  public property__client" data-toggle="collapse" data-target=".property__client .collapse">
+                                <h2>Service client</h2>
+                                <pre>_client : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__api"> </a>
+                            <div class="element clickable property  public property__api" data-toggle="collapse" data-target=".property__api .collapse">
+                                <h2>Service API</h2>
+                                <pre>_api : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Components\Projects\Helpers\Connect"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Projects.Helpers.html">Helpers</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Projects.Helpers.Connect.html">Connect</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:10 +0000.<br/>
+    </footer>
+    </body>
+</html>

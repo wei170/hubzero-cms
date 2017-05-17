@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Storefront\Models\Warehouse
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Constructor method">
+            <span class="description">Constructor method</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                <li class="method public">
+        <a href="#method_addAccessGroups" title="addAccessGroups :: Add access group scope for entities (currently products only)">
+            <span class="description">Add access group scope for entities (currently products only)</span><pre>addAccessGroups</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addAccessLevels" title="addAccessLevels :: Add access level scope for entities having access property (currently products only)">
+            <span class="description">Add access level scope for entities having access property (currently products only)</span><pre>addAccessLevels</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addCollection" title="addCollection :: Add collection">
+            <span class="description">Add collection</span><pre>addCollection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addCoupon" title="addCoupon :: Add product coupon">
+            <span class="description">Add product coupon</span><pre>addCoupon</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addLookupCollection" title="addLookupCollection :: Add a collection to the instance lookup scope">
+            <span class="description">Add a collection to the instance lookup scope</span><pre>addLookupCollection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addUserScope" title="addUserScope :: Add user level scope for entities having user permission property (currently SKUs only)">
+            <span class="description">Add user level scope for entities having user permission property (currently SKUs only)</span><pre>addUserScope</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_checkProduct" title="checkProduct :: Check if product exists and can be viewed by the current user">
+            <span class="description">Check if product exists and can be viewed by the current user</span><pre>checkProduct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_collectionExists" title="collectionExists :: Check if collection exists">
+            <span class="description">Check if collection exists</span><pre>collectionExists</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_couponExists" title="couponExists :: Check if coupon exists">
+            <span class="description">Check if coupon exists</span><pre>couponExists</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deleteCoupon" title="deleteCoupon :: Delete coupon">
+            <span class="description">Delete coupon</span><pre>deleteCoupon</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_getCategories" title="getCategories :: Get all root (no parents) product &#039;category&#039; collections">
+            <span class="description">Get all root (no parents) product &#039;category&#039; collections</span><pre>getCategories</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCollection" title="getCollection :: Get a collection">
+            <span class="description">Get a collection</span><pre>getCollection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCollectionInfo" title="getCollectionInfo :: Get collection information">
+            <span class="description">Get collection information</span><pre>getCollectionInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCollections" title="getCollections :: ">
+            <span class="description"></span><pre>getCollections</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCourse" title="getCourse :: Get a course">
+            <span class="description">Get a course</span><pre>getCourse</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCourseByAlias" title="getCourseByAlias :: Get course by alias">
+            <span class="description">Get course by alias</span><pre>getCourseByAlias</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getOptionGroupOptions" title="getOptionGroupOptions :: Get all options for the option group (for admin)">
+            <span class="description">Get all options for the option group (for admin)</span><pre>getOptionGroupOptions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getOptionGroups" title="getOptionGroups :: ">
+            <span class="description"></span><pre>getOptionGroups</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProductCollections" title="getProductCollections :: Get product collections -- collections product is included in">
+            <span class="description">Get product collections -- collections product is included in</span><pre>getProductCollections</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProductInfo" title="getProductInfo :: Get product information TODO: phase out the legacy format">
+            <span class="description">Get product information TODO: phase out the legacy format</span><pre>getProductInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProductOptions" title="getProductOptions :: Get product option groups and options">
+            <span class="description">Get product option groups and options</span><pre>getProductOptions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProducts" title="getProducts :: Get the products within the given scope">
+            <span class="description">Get the products within the given scope</span><pre>getProducts</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProductSkus" title="getProductSkus :: Get product SKU IDs">
+            <span class="description">Get product SKU IDs</span><pre>getProductSkus</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProductTypeInfo" title="getProductTypeInfo :: Get product type info">
+            <span class="description">Get product type info</span><pre>getProductTypeInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProductTypes" title="getProductTypes :: Get product types">
+            <span class="description">Get product types</span><pre>getProductTypes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getRootCategories" title="getRootCategories :: Get all non-empty (those that have at least one active product) root (no parents) product &#039;category&#039; collections">
+            <span class="description">Get all non-empty (those that have at least one active product) root (no parents) product &#039;category&#039; collections</span><pre>getRootCategories</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSkuInfo" title="getSkuInfo :: Get all info for SKU provided, including options">
+            <span class="description">Get all info for SKU provided, including options</span><pre>getSkuInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSkusInfo" title="getSkusInfo :: Get all info for SKUs provided, including options">
+            <span class="description">Get all info for SKUs provided, including options</span><pre>getSkusInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_mapSku" title="mapSku :: Get SKU mapping to the provided options">
+            <span class="description">Get SKU mapping to the provided options</span><pre>mapSku</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_productExists" title="productExists :: Check if product exists">
+            <span class="description">Check if product exists</span><pre>productExists</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_resetLookupCollections" title="resetLookupCollections :: Reset instance lookup scope">
+            <span class="description">Reset instance lookup scope</span><pre>resetLookupCollections</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_updateCollection" title="updateCollection :: Update existing collection">
+            <span class="description">Update existing collection</span><pre>updateCollection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_updateCoupon" title="updateCoupon :: ">
+            <span class="description"></span><pre>updateCoupon</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                <li class="method private">
+                            <a href="#method__doCoupon" title="_doCoupon :: Handle product coupon (add, update)">
+                                <span class="description">Handle product coupon (add, update)</span><pre>_doCoupon</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method__getAllCollections" title="_getAllCollections :: Get all including empty root (no parents) collections
+TODO: implement subcategories">
+                                <span class="description">Get all including empty root (no parents) collections
+TODO: implement subcategories</span><pre>_getAllCollections</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method__getCollections" title="_getCollections :: Get all non-empty (those that have at least one active product) root (no parents) collections">
+                                <span class="description">Get all non-empty (those that have at least one active product) root (no parents) collections</span><pre>_getCollections</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private">
+                            <a href="#method_doCollection" title="doCollection :: Handle collection actions (add, update)">
+                                <span class="description">Handle collection actions (add, update)</span><pre>doCollection</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Warehouse</h1>
+                <small style="display: block; text-align: right">
+                                            Extends \Hubzero\Base\Object
+                                                        </small>
+                <p class="short_description">Products inventory and structure (only product lookup and inventory management)</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Constructor method</h2>
+                            <pre>__construct() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__doCoupon"></a>
+                        <div class="element clickable method private  method__doCoupon" data-toggle="collapse" data-target=".method__doCoupon .collapse">
+                            <h2>Handle product coupon (add, update)</h2>
+                            <pre>_doCoupon( $coupon,  $action) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$coupon</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>coupon ID</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__getAllCollections"></a>
+                        <div class="element clickable method private  method__getAllCollections" data-toggle="collapse" data-target=".method__getAllCollections .collapse">
+                            <h2>Get all including empty root (no parents) collections
+TODO: implement subcategories</h2>
+                            <pre>_getAllCollections( $return = &#039;list&#039;,  $filters = array()) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__getCollections"></a>
+                        <div class="element clickable method private  method__getCollections" data-toggle="collapse" data-target=".method__getCollections .collapse">
+                            <h2>Get all non-empty (those that have at least one active product) root (no parents) collections</h2>
+                            <pre>_getCollections( $collectionType = &#039;category&#039;,  $filters = false) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$collectionType</h4>
+                                                <code></code><p><p>-- type of collection, category by default</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addAccessGroups"></a>
+                        <div class="element clickable method public  method_addAccessGroups" data-toggle="collapse" data-target=".method_addAccessGroups .collapse">
+                            <h2>Add access group scope for entities (currently products only)</h2>
+                            <pre>addAccessGroups( $accessGroups) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$accessGroups</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addAccessLevels"></a>
+                        <div class="element clickable method public  method_addAccessLevels" data-toggle="collapse" data-target=".method_addAccessLevels .collapse">
+                            <h2>Add access level scope for entities having access property (currently products only)</h2>
+                            <pre>addAccessLevels( $accessLevels) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$accessLevels</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addCollection"></a>
+                        <div class="element clickable method public  method_addCollection" data-toggle="collapse" data-target=".method_addCollection .collapse">
+                            <h2>Add collection</h2>
+                            <pre>addCollection( $collection) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$collection</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addCoupon"></a>
+                        <div class="element clickable method public  method_addCoupon" data-toggle="collapse" data-target=".method_addCoupon .collapse">
+                            <h2>Add product coupon</h2>
+                            <pre>addCoupon( $coupon) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$coupon</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>coupon ID</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addLookupCollection"></a>
+                        <div class="element clickable method public  method_addLookupCollection" data-toggle="collapse" data-target=".method_addLookupCollection .collapse">
+                            <h2>Add a collection to the instance lookup scope</h2>
+                            <pre>addLookupCollection( $cId) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cId</h4>
+                                                <code></code><p><p>Collection ID</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addUserScope"></a>
+                        <div class="element clickable method public  method_addUserScope" data-toggle="collapse" data-target=".method_addUserScope .collapse">
+                            <h2>Add user level scope for entities having user permission property (currently SKUs only)</h2>
+                            <pre>addUserScope( $uId) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$uId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_checkProduct"></a>
+                        <div class="element clickable method public  method_checkProduct" data-toggle="collapse" data-target=".method_checkProduct .collapse">
+                            <h2>Check if product exists and can be viewed by the current user</h2>
+                            <pre>checkProduct( $product,  $showInactive = false) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$product</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>pId on success, null if no match found</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_collectionExists"></a>
+                        <div class="element clickable method public  method_collectionExists" data-toggle="collapse" data-target=".method_collectionExists .collapse">
+                            <h2>Check if collection exists</h2>
+                            <pre>collectionExists( $cId,  $showInactive = false) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>cId on success, null if no match found</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_couponExists"></a>
+                        <div class="element clickable method public  method_couponExists" data-toggle="collapse" data-target=".method_couponExists .collapse">
+                            <h2>Check if coupon exists</h2>
+                            <pre>couponExists( $code) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$code</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>coupon ID on sucess, null if no match found</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deleteCoupon"></a>
+                        <div class="element clickable method public  method_deleteCoupon" data-toggle="collapse" data-target=".method_deleteCoupon .collapse">
+                            <h2>Delete coupon</h2>
+                            <pre>deleteCoupon( $code) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$code</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_doCollection"></a>
+                        <div class="element clickable method private  method_doCollection" data-toggle="collapse" data-target=".method_doCollection .collapse">
+                            <h2>Handle collection actions (add, update)</h2>
+                            <pre>doCollection( $collection,  $action) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$collection</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>category ID</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCategories"></a>
+                        <div class="element clickable method public  method_getCategories" data-toggle="collapse" data-target=".method_getCategories .collapse">
+                            <h2>Get all root (no parents) product &#039;category&#039; collections</h2>
+                            <pre>getCategories( $rtrn = &#039;list&#039;,  $filters = array()) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rtrn</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCollection"></a>
+                        <div class="element clickable method public  method_getCollection" data-toggle="collapse" data-target=".method_getCollection .collapse">
+                            <h2>Get a collection</h2>
+                            <pre>getCollection( $cId) : \Components\Storefront\Models\StorefrontModelCollection</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Storefront\Models\StorefrontModelCollection</code><p><p>Instance of a collection</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCollectionInfo"></a>
+                        <div class="element clickable method public  method_getCollectionInfo" data-toggle="collapse" data-target=".method_getCollectionInfo .collapse">
+                            <h2>Get collection information</h2>
+                            <pre>getCollectionInfo( $cId,  $showInactive = false) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>Collection info</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCollections"></a>
+                        <div class="element clickable method public  method_getCollections" data-toggle="collapse" data-target=".method_getCollections .collapse">
+                            <h2>getCollections</h2>
+                            <pre>getCollections( $rtrn = &#039;list&#039;,  $filters = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rtrn</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCourse"></a>
+                        <div class="element clickable method public  method_getCourse" data-toggle="collapse" data-target=".method_getCourse .collapse">
+                            <h2>Get a course</h2>
+                            <pre>getCourse( $courseId) : \Components\Storefront\Models\StorefrontModelCourse</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$courseId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Storefront\Models\StorefrontModelCourse</code><p><p>Instance of a product</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCourseByAlias"></a>
+                        <div class="element clickable method public  method_getCourseByAlias" data-toggle="collapse" data-target=".method_getCourseByAlias .collapse">
+                            <h2>Get course by alias</h2>
+                            <pre>getCourseByAlias( $alias) : \Components\Storefront\Models\StorefrontModelCourse</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$alias</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Storefront\Models\StorefrontModelCourse</code><p><p>Instance of a product</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getOptionGroupOptions"></a>
+                        <div class="element clickable method public  method_getOptionGroupOptions" data-toggle="collapse" data-target=".method_getOptionGroupOptions .collapse">
+                            <h2>Get all options for the option group (for admin)</h2>
+                            <pre>getOptionGroupOptions( $ogId,  $return = &#039;rows&#039;,  $showOnlyActive = true,  $filters = false) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ogId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showOnlyActive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>options IDs</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getOptionGroups"></a>
+                        <div class="element clickable method public  method_getOptionGroups" data-toggle="collapse" data-target=".method_getOptionGroups .collapse">
+                            <h2>getOptionGroups</h2>
+                            <pre>getOptionGroups( $rtrn = &#039;list&#039;,  $filters = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rtrn</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProductCollections"></a>
+                        <div class="element clickable method public  method_getProductCollections" data-toggle="collapse" data-target=".method_getProductCollections .collapse">
+                            <h2>Get product collections -- collections product is included in</h2>
+                            <pre>getProductCollections( $pId) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>collections</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProductInfo"></a>
+                        <div class="element clickable method public  method_getProductInfo" data-toggle="collapse" data-target=".method_getProductInfo .collapse">
+                            <h2>Get product information TODO: phase out the legacy format</h2>
+                            <pre>getProductInfo( $pId,  $showInactive = false) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>Product info</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProductOptions"></a>
+                        <div class="element clickable method public  method_getProductOptions" data-toggle="collapse" data-target=".method_getProductOptions .collapse">
+                            <h2>Get product option groups and options</h2>
+                            <pre>getProductOptions( $pId) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pId</h4>
+                                                <code></code><p><p>Product ID</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProducts"></a>
+                        <div class="element clickable method public  method_getProducts" data-toggle="collapse" data-target=".method_getProducts .collapse">
+                            <h2>Get the products within the given scope</h2>
+                            <pre>getProducts( $return = &#039;rows&#039;,  $showOnlyActive = true,  $filters = false) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showOnlyActive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProductSkus"></a>
+                        <div class="element clickable method public  method_getProductSkus" data-toggle="collapse" data-target=".method_getProductSkus .collapse">
+                            <h2>Get product SKU IDs</h2>
+                            <pre>getProductSkus( $pId,  $return = &#039;rows&#039;,  $showOnlyActive = true,  $filters = false) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showOnlyActive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>SKU IDs</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProductTypeInfo"></a>
+                        <div class="element clickable method public  method_getProductTypeInfo" data-toggle="collapse" data-target=".method_getProductTypeInfo .collapse">
+                            <h2>Get product type info</h2>
+                            <pre>getProductTypeInfo( $ptId) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ptId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>info</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProductTypes"></a>
+                        <div class="element clickable method public  method_getProductTypes" data-toggle="collapse" data-target=".method_getProductTypes .collapse">
+                            <h2>Get product types</h2>
+                            <pre>getProductTypes() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>info</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getRootCategories"></a>
+                        <div class="element clickable method public  method_getRootCategories" data-toggle="collapse" data-target=".method_getRootCategories .collapse">
+                            <h2>Get all non-empty (those that have at least one active product) root (no parents) product &#039;category&#039; collections</h2>
+                            <pre>getRootCategories( $return = &#039;rows&#039;,  $filters = false) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$return</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSkuInfo"></a>
+                        <div class="element clickable method public  method_getSkuInfo" data-toggle="collapse" data-target=".method_getSkuInfo .collapse">
+                            <h2>Get all info for SKU provided, including options</h2>
+                            <pre>getSkuInfo( $sId,  $showInactive = true) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sId</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>info</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSkusInfo"></a>
+                        <div class="element clickable method public  method_getSkusInfo" data-toggle="collapse" data-target=".method_getSkusInfo .collapse">
+                            <h2>Get all info for SKUs provided, including options</h2>
+                            <pre>getSkusInfo( $skus,  $showInactive = false,  $filters = false) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$skus</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filters</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p><p>info</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_mapSku"></a>
+                        <div class="element clickable method public  method_mapSku" data-toggle="collapse" data-target=".method_mapSku .collapse">
+                            <h2>Get SKU mapping to the provided options</h2>
+                            <pre>mapSku( $pId,  $options,  $throwExceptionOnNomatch = true) : \Components\Storefront\Models\SKU</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pId</h4>
+                                                <code></code><p><p>Product ID</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code></code><p><p>Selected options (optional for products with no options)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$throwExceptionOnNomatch</h4>
+                                                <code></code><p><p>Should the exception be thrown if no match found (default: true)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Components\Storefront\Models\SKU</code><p><p>ID</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_productExists"></a>
+                        <div class="element clickable method public  method_productExists" data-toggle="collapse" data-target=".method_productExists .collapse">
+                            <h2>Check if product exists</h2>
+                            <pre>productExists( $product,  $showInactive = false) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$product</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$showInactive</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>pId on success, null if no match found</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_resetLookupCollections"></a>
+                        <div class="element clickable method public  method_resetLookupCollections" data-toggle="collapse" data-target=".method_resetLookupCollections .collapse">
+                            <h2>Reset instance lookup scope</h2>
+                            <pre>resetLookupCollections() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_updateCollection"></a>
+                        <div class="element clickable method public  method_updateCollection" data-toggle="collapse" data-target=".method_updateCollection .collapse">
+                            <h2>Update existing collection</h2>
+                            <pre>updateCollection( $collection) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$collection</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_updateCoupon"></a>
+                        <div class="element clickable method public  method_updateCoupon" data-toggle="collapse" data-target=".method_updateCoupon .collapse">
+                            <h2>updateCoupon</h2>
+                            <pre>updateCoupon( $coupon) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$coupon</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_lookupCollections"> </a>
+                            <div class="element clickable property  public property_lookupCollections" data-toggle="collapse" data-target=".property_lookupCollections .collapse">
+                                <h2>array Product categories to look at (to define scope)</h2>
+                                <pre>lookupCollections : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_accessLevelsScope"> </a>
+                            <div class="element clickable property  public property_accessLevelsScope" data-toggle="collapse" data-target=".property_accessLevelsScope .collapse">
+                                <h2>accessLevelsScope</h2>
+                                <pre>accessLevelsScope : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_accessGroupsScope"> </a>
+                            <div class="element clickable property  public property_accessGroupsScope" data-toggle="collapse" data-target=".property_accessGroupsScope .collapse">
+                                <h2>accessGroupsScope</h2>
+                                <pre>accessGroupsScope : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_userScope"> </a>
+                            <div class="element clickable property  public property_userScope" data-toggle="collapse" data-target=".property_userScope .collapse">
+                                <h2>userScope</h2>
+                                <pre>userScope : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_db"> </a>
+                            <div class="element clickable property  public property_db" data-toggle="collapse" data-target=".property_db .collapse">
+                                <h2>db</h2>
+                                <pre>db : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Components\Storefront\Models\Warehouse"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Storefront.Models.html">Models</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Storefront.Models.Warehouse.html">Warehouse</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:08 +0000.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Tools\Site\Controllers\Storage
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method__authorize" title="_authorize :: Authorization checks">
+            <span class="description">Authorization checks</span><pre>_authorize</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_deletefileTask" title="deletefileTask :: Delete a file">
+            <span class="description">Delete a file</span><pre>deletefileTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deletefolderTask" title="deletefolderTask :: Delete a folder">
+            <span class="description">Delete a folder</span><pre>deletefolderTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_diskusageTask" title="diskusageTask :: Display how much disk usage is being used">
+            <span class="description">Display how much disk usage is being used</span><pre>diskusageTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_displayTask" title="displayTask :: Display a file list and options for managing disk usage">
+            <span class="description">Display a file list and options for managing disk usage</span><pre>displayTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_execute" title="execute :: Execute a task">
+            <span class="description">Execute a task</span><pre>execute</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_filelistTask" title="filelistTask :: Show a file list">
+            <span class="description">Show a file list</span><pre>filelistTask</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_purgeTask" title="purgeTask :: Purge old session data">
+            <span class="description">Purge old session data</span><pre>purgeTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_storageexceededTask" title="storageexceededTask :: Display a warning message that the user has exceeded their allowed space
+then display a file list and options for managing disk usage">
+            <span class="description">Display a warning message that the user has exceeded their allowed space
+then display a file list and options for managing disk usage</span><pre>storageexceededTask</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                <li class="method protected">
+                            <a href="#method__buildPathway" title="_buildPathway :: Build the document path (breadcrumbs)">
+                                <span class="description">Build the document path (breadcrumbs)</span><pre>_buildPathway</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__buildTitle" title="_buildTitle :: Build the document title">
+                                <span class="description">Build the document title</span><pre>_buildTitle</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected">
+                            <a href="#method__login" title="_login :: Show a login form">
+                                <span class="description">Show a login form</span><pre>_login</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                        <li class="method private">
+                            <a href="#method__buildUploadPath" title="_buildUploadPath :: Construct the path to be used for file management">
+                                <span class="description">Construct the path to be used for file management</span><pre>_buildUploadPath</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                            <li class="method private">
+                            <a href="#method_getDiskUsage" title="getDiskUsage :: Determine the amount of disk usage">
+                                <span class="description">Determine the amount of disk usage</span><pre>getDiskUsage</pre>
+                            </a>
+                        </li>
+                                                                                                                        </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Storage</h1>
+                <small style="display: block; text-align: right">
+                                            Extends \Hubzero\Component\SiteController
+                                                        </small>
+                <p class="short_description">Tools controller class for managing user disk storage</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method__authorize"></a>
+                        <div class="element clickable method public  method__authorize" data-toggle="collapse" data-target=".method__authorize .collapse">
+                            <h2>Authorization checks</h2>
+                            <pre>_authorize(string $assetType = &#039;component&#039;, string $assetId = null) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$assetType</h4>
+                                                <code>string</code><p><p>Asset type</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$assetId</h4>
+                                                <code>string</code><p><p>Asset id to check against</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__buildPathway"></a>
+                        <div class="element clickable method protected  method__buildPathway" data-toggle="collapse" data-target=".method__buildPathway .collapse">
+                            <h2>Build the document path (breadcrumbs)</h2>
+                            <pre>_buildPathway() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__buildTitle"></a>
+                        <div class="element clickable method protected  method__buildTitle" data-toggle="collapse" data-target=".method__buildTitle .collapse">
+                            <h2>Build the document title</h2>
+                            <pre>_buildTitle() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__buildUploadPath"></a>
+                        <div class="element clickable method private  method__buildUploadPath" data-toggle="collapse" data-target=".method__buildUploadPath .collapse">
+                            <h2>Construct the path to be used for file management</h2>
+                            <pre>_buildUploadPath(string $listdir, string $subdir = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$listdir</h4>
+                                                <code>string</code><p><p>Base directory</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subdir</h4>
+                                                <code>string</code><p><p>Sub-directory</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__login"></a>
+                        <div class="element clickable method protected  method__login" data-toggle="collapse" data-target=".method__login .collapse">
+                            <h2>Show a login form</h2>
+                            <pre>_login( $rtrn) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rtrn</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deletefileTask"></a>
+                        <div class="element clickable method public  method_deletefileTask" data-toggle="collapse" data-target=".method_deletefileTask .collapse">
+                            <h2>Delete a file</h2>
+                            <pre>deletefileTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deletefolderTask"></a>
+                        <div class="element clickable method public  method_deletefolderTask" data-toggle="collapse" data-target=".method_deletefolderTask .collapse">
+                            <h2>Delete a folder</h2>
+                            <pre>deletefolderTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_diskusageTask"></a>
+                        <div class="element clickable method public  method_diskusageTask" data-toggle="collapse" data-target=".method_diskusageTask .collapse">
+                            <h2>Display how much disk usage is being used</h2>
+                            <pre>diskusageTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_displayTask"></a>
+                        <div class="element clickable method public  method_displayTask" data-toggle="collapse" data-target=".method_displayTask .collapse">
+                            <h2>Display a file list and options for managing disk usage</h2>
+                            <pre>displayTask(boolean $exceeded = false) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$exceeded</h4>
+                                                <code>boolean</code><p><p>Exceeded allowed space?</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_execute"></a>
+                        <div class="element clickable method public  method_execute" data-toggle="collapse" data-target=".method_execute .collapse">
+                            <h2>Execute a task</h2>
+                            <pre>execute() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_filelistTask"></a>
+                        <div class="element clickable method public  method_filelistTask" data-toggle="collapse" data-target=".method_filelistTask .collapse">
+                            <h2>Show a file list</h2>
+                            <pre>filelistTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDiskUsage"></a>
+                        <div class="element clickable method private  method_getDiskUsage" data-toggle="collapse" data-target=".method_getDiskUsage .collapse">
+                            <h2>Determine the amount of disk usage</h2>
+                            <pre>getDiskUsage(string $type = &#039;soft&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>Type [hard, soft]</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_purgeTask"></a>
+                        <div class="element clickable method public  method_purgeTask" data-toggle="collapse" data-target=".method_purgeTask .collapse">
+                            <h2>Purge old session data</h2>
+                            <pre>purgeTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_storageexceededTask"></a>
+                        <div class="element clickable method public  method_storageexceededTask" data-toggle="collapse" data-target=".method_storageexceededTask .collapse">
+                            <h2>Display a warning message that the user has exceeded their allowed space
+then display a file list and options for managing disk usage</h2>
+                            <pre>storageexceededTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\Components\Tools\Site\Controllers\Storage"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Tools.Site.Controllers.html">Controllers</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Tools.Site.Controllers.Storage.html">Storage</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:06 +0000.<br/>
+    </footer>
+    </body>
+</html>

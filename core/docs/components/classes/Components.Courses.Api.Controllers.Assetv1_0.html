@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Courses\Api\Controllers\Assetv1_0
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                                                                            <li class="method public">
+        <a href="#method_deletefileTask" title="deletefileTask :: Deletes an asset file">
+            <span class="description">Deletes an asset file</span><pre>deletefileTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deleteTask" title="deleteTask :: Deletes an asset">
+            <span class="description">Deletes an asset</span><pre>deleteTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_editTask" title="editTask :: Retrieves the asset edit page">
+            <span class="description">Retrieves the asset edit page</span><pre>editTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getformanddepidTask" title="getformanddepidTask :: Looks up the form id and deployment id based on the asset id">
+            <span class="description">Looks up the form id and deployment id based on the asset id</span><pre>getformanddepidTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getformidTask" title="getformidTask :: Looks up the form id based on the asset id">
+            <span class="description">Looks up the form id based on the asset id</span><pre>getformidTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_handlersTask" title="handlersTask :: Gets the asset handlers for a given extension">
+            <span class="description">Gets the asset handlers for a given extension</span><pre>handlersTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_newTask" title="newTask :: Creates a new asset">
+            <span class="description">Creates a new asset</span><pre>newTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_previewTask" title="previewTask :: Previews an asset">
+            <span class="description">Previews an asset</span><pre>previewTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_reorderTask" title="reorderTask :: Reorders assets">
+            <span class="description">Reorders assets</span><pre>reorderTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_saveTask" title="saveTask :: Saves an asset">
+            <span class="description">Saves an asset</span><pre>saveTask</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_togglepublishedTask" title="togglepublishedTask :: Toggles the published state of an asset">
+            <span class="description">Toggles the published state of an asset</span><pre>togglepublishedTask</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                            <li class="method protected inherited">
+                            <a href="#method_authorizeOrFail" title="authorizeOrFail :: Checks to ensure appropriate authorization">
+                                <span class="description">Checks to ensure appropriate authorization</span><pre>authorizeOrFail</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Assetv1_0</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/Components.Courses.Api.Controllers.base.html">\Components\Courses\Api\Controllers\base</a>
+                                                        </small>
+                <p class="short_description">API controller for the course assets</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_authorizeOrFail"></a>
+                        <div class="element clickable method protected  method_authorizeOrFail inherited" data-toggle="collapse" data-target=".method_authorizeOrFail .collapse">
+                            <h2>Checks to ensure appropriate authorization</h2>
+                            <pre>authorizeOrFail( $action = &#039;manage&#039;) : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\Components\Courses\Api\Controllers\Exception</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deletefileTask"></a>
+                        <div class="element clickable method public  method_deletefileTask" data-toggle="collapse" data-target=".method_deletefileTask .collapse">
+                            <h2>Deletes an asset file</h2>
+                            <pre>deletefileTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/deletefile</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset owning file&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;filename&quot;,
+&quot;description&quot;: &quot;Name of file to delete&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deleteTask"></a>
+                        <div class="element clickable method public  method_deleteTask" data-toggle="collapse" data-target=".method_deleteTask .collapse">
+                            <h2>Deletes an asset</h2>
+                            <pre>deleteTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/delete</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;asset_id&quot;,
+&quot;description&quot;: &quot;ID of asset to delete&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;scope&quot;,
+&quot;description&quot;: &quot;Asset scope&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;scope_id&quot;,
+&quot;description&quot;: &quot;Asset scope ID&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_editTask"></a>
+                        <div class="element clickable method public  method_editTask" data-toggle="collapse" data-target=".method_editTask .collapse">
+                            <h2>Retrieves the asset edit page</h2>
+                            <pre>editTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/edit</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset to edit&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getformanddepidTask"></a>
+                        <div class="element clickable method public  method_getformanddepidTask" data-toggle="collapse" data-target=".method_getformanddepidTask .collapse">
+                            <h2>Looks up the form id and deployment id based on the asset id</h2>
+                            <pre>getformanddepidTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    FIXME
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>: combine this with method above</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>GET</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/getformanddepid</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset to look up&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getformidTask"></a>
+                        <div class="element clickable method public  method_getformidTask" data-toggle="collapse" data-target=".method_getformidTask .collapse">
+                            <h2>Looks up the form id based on the asset id</h2>
+                            <pre>getformidTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>GET</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/getformid</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset to look up&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_handlersTask"></a>
+                        <div class="element clickable method public  method_handlersTask" data-toggle="collapse" data-target=".method_handlersTask .collapse">
+                            <h2>Gets the asset handlers for a given extension</h2>
+                            <pre>handlersTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/handlers</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;name&quot;,
+&quot;description&quot;: &quot;Name of file to be uploaded&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_newTask"></a>
+                        <div class="element clickable method public  method_newTask" data-toggle="collapse" data-target=".method_newTask .collapse">
+                            <h2>Creates a new asset</h2>
+                            <pre>newTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/new</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;files&quot;,
+&quot;description&quot;: &quot;Files to upload&quot;,
+&quot;type&quot;:        &quot;array&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;type&quot;,
+&quot;description&quot;: &quot;Content type being created&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;handler&quot;,
+&quot;description&quot;: &quot;The file handler to use&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_previewTask"></a>
+                        <div class="element clickable method public  method_previewTask" data-toggle="collapse" data-target=".method_previewTask .collapse">
+                            <h2>Previews an asset</h2>
+                            <pre>previewTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/preview</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset to preview&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_reorderTask"></a>
+                        <div class="element clickable method public  method_reorderTask" data-toggle="collapse" data-target=".method_reorderTask .collapse">
+                            <h2>Reorders assets</h2>
+                            <pre>reorderTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/reorder</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;asset&quot;,
+&quot;description&quot;: &quot;Array of IDs of assets to reorder&quot;,
+&quot;type&quot;:        &quot;array&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;scope&quot;,
+&quot;description&quot;: &quot;Asset scope&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;scope_id&quot;,
+&quot;description&quot;: &quot;Asset scope ID&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_saveTask"></a>
+                        <div class="element clickable method public  method_saveTask" data-toggle="collapse" data-target=".method_saveTask .collapse">
+                            <h2>Saves an asset</h2>
+                            <pre>saveTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/save</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset to save&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;title&quot;,
+&quot;description&quot;: &quot;Asset title&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     &quot;New asset&quot;
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;published&quot;,
+&quot;description&quot;: &quot;Asset state&quot;,
+&quot;type&quot;:        &quot;string&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     null
+}</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;state&quot;,
+&quot;description&quot;: &quot;Asset state&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    false,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_togglepublishedTask"></a>
+                        <div class="element clickable method public  method_togglepublishedTask" data-toggle="collapse" data-target=".method_togglepublishedTask .collapse">
+                            <h2>Toggles the published state of an asset</h2>
+                            <pre>togglepublishedTask() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    apiMethod
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>POST</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiUri
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>/courses/asset/togglepublished</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    apiParameter
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>{
+&quot;name&quot;:        &quot;id&quot;,
+&quot;description&quot;: &quot;ID of asset to toggle state&quot;,
+&quot;type&quot;:        &quot;integer&quot;,
+&quot;required&quot;:    true,
+&quot;default&quot;:     null
+}</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\Components\Courses\Api\Controllers\Assetv1_0"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Courses.Api.Controllers.html">Controllers</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Courses.Api.Controllers.Assetv1_0.html">Assetv1_0</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:06 +0000.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Hubzero-cms Components Api Documentation &raquo; \Components\Oaipmh\Models\Service
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Hubzero-cms Components Api Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Components.html">Components</a></li>
+                                                                        <li><a href="../namespaces/Hubzero.html">Hubzero</a></li>
+                                                                        <li><a href="../namespaces/Cron.html">Cron</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Constructor">
+            <span class="description">Constructor</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___toString" title="__toString :: Return the XML response">
+            <span class="description">Return the XML response</span><pre>__toString</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_decodeToken" title="decodeToken :: Decode a resumption token">
+            <span class="description">Decode a resumption token</span><pre>decodeToken</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_encodeToken" title="encodeToken :: Create a resumption token">
+            <span class="description">Create a resumption token</span><pre>encodeToken</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_error" title="error :: Set error">
+            <span class="description">Set error</span><pre>error</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_formats" title="formats :: List formats">
+            <span class="description">List formats</span><pre>formats</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDbo" title="getDbo :: Get the database connection">
+            <span class="description">Get the database connection</span><pre>getDbo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getProviders" title="getProviders :: Get the list of providers">
+            <span class="description">Get the list of providers</span><pre>getProviders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getResponse" title="getResponse :: Get XML builder">
+            <span class="description">Get XML builder</span><pre>getResponse</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSchema" title="getSchema :: Get schema">
+            <span class="description">Get schema</span><pre>getSchema</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSchemas" title="getSchemas :: Get schema list">
+            <span class="description">Get schema list</span><pre>getSchemas</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_identifiers" title="identifiers :: List only record headers">
+            <span class="description">List only record headers</span><pre>identifiers</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_identify" title="identify :: Identify the service">
+            <span class="description">Identify the service</span><pre>identify</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_record" title="record :: Process a single record">
+            <span class="description">Process a single record</span><pre>record</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_records" title="records :: List records">
+            <span class="description">List records</span><pre>records</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_register" title="register :: Register a provider">
+            <span class="description">Register a provider</span><pre>register</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDbo" title="setDbo :: Set the database connection">
+            <span class="description">Set the database connection</span><pre>setDbo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setResponse" title="setResponse :: Set the response object">
+            <span class="description">Set the response object</span><pre>setResponse</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_sets" title="sets :: List all sets">
+            <span class="description">List all sets</span><pre>sets</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSchema" title="setSchema :: Set schema">
+            <span class="description">Set schema</span><pre>setSchema</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_xml" title="xml :: Get the final response as XML">
+            <span class="description">Get the final response as XML</span><pre>xml</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private">
+                            <a href="#method_loadProviders" title="loadProviders :: Load data providers">
+                                <span class="description">Load data providers</span><pre>loadProviders</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_loadSchemas" title="loadSchemas :: Load schemas">
+                                <span class="description">Load schemas</span><pre>loadSchemas</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_BAD_ARGUMENT" title="ERROR_BAD_ARGUMENT :: ">
+                        <span class="description"></span><pre>ERROR_BAD_ARGUMENT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_BAD_FORMAT" title="ERROR_BAD_FORMAT :: ">
+                        <span class="description"></span><pre>ERROR_BAD_FORMAT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_BAD_ID" title="ERROR_BAD_ID :: ">
+                        <span class="description"></span><pre>ERROR_BAD_ID</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_BAD_RESUMPTION_TOKEN" title="ERROR_BAD_RESUMPTION_TOKEN :: ">
+                        <span class="description"></span><pre>ERROR_BAD_RESUMPTION_TOKEN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_BAD_VERB" title="ERROR_BAD_VERB :: OAI-PMH error types">
+                        <span class="description">OAI-PMH error types</span><pre>ERROR_BAD_VERB</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_NO_SET_HIERARCHY" title="ERROR_NO_SET_HIERARCHY :: ">
+                        <span class="description"></span><pre>ERROR_NO_SET_HIERARCHY</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR_RECORD_NOT_FOUND" title="ERROR_RECORD_NOT_FOUND :: ">
+                        <span class="description"></span><pre>ERROR_RECORD_NOT_FOUND</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Service</h1>
+                <small style="display: block; text-align: right">
+                                            Extends \Hubzero\Base\Object
+                                                        </small>
+                <p class="short_description">OAIPMH Provider for building responses</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>hubzero-cms</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Constructor</h2>
+                            <pre>__construct(string $stylesheet = null, object $db = null, string $version = &#039;1.0&#039;, string $encoding = &#039;utf-8&#039;) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$stylesheet</h4>
+                                                <code>string</code><p><p>Optional stylesheet to link to</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$db</h4>
+                                                <code>object</code><p><p>Optional database connection</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$version</h4>
+                                                <code>string</code><p><p>XML Version</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$encoding</h4>
+                                                <code>string</code><p><p>XML Encoding</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___toString"></a>
+                        <div class="element clickable method public  method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+                            <h2>Return the XML response</h2>
+                            <pre>__toString() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_decodeToken"></a>
+                        <div class="element clickable method public  method_decodeToken" data-toggle="collapse" data-target=".method_decodeToken .collapse">
+                            <h2>Decode a resumption token</h2>
+                            <pre>decodeToken(string $resumption) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$resumption</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_encodeToken"></a>
+                        <div class="element clickable method public  method_encodeToken" data-toggle="collapse" data-target=".method_encodeToken .collapse">
+                            <h2>Create a resumption token</h2>
+                            <pre>encodeToken(integer $limit, integer $start, string $from, string $until, string $set, string $prefix) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$limit</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$start</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$from</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$until</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$set</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_error"></a>
+                        <div class="element clickable method public  method_error" data-toggle="collapse" data-target=".method_error .collapse">
+                            <h2>Set error</h2>
+                            <pre>error(string $error = &#039;&#039;, string $message = null,  $verb = null) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$error</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$verb</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_formats"></a>
+                        <div class="element clickable method public  method_formats" data-toggle="collapse" data-target=".method_formats .collapse">
+                            <h2>List formats</h2>
+                            <pre>formats() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDbo"></a>
+                        <div class="element clickable method public  method_getDbo" data-toggle="collapse" data-target=".method_getDbo .collapse">
+                            <h2>Get the database connection</h2>
+                            <pre>getDbo() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getProviders"></a>
+                        <div class="element clickable method public  method_getProviders" data-toggle="collapse" data-target=".method_getProviders .collapse">
+                            <h2>Get the list of providers</h2>
+                            <pre>getProviders() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getResponse"></a>
+                        <div class="element clickable method public  method_getResponse" data-toggle="collapse" data-target=".method_getResponse .collapse">
+                            <h2>Get XML builder</h2>
+                            <pre>getResponse() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSchema"></a>
+                        <div class="element clickable method public  method_getSchema" data-toggle="collapse" data-target=".method_getSchema .collapse">
+                            <h2>Get schema</h2>
+                            <pre>getSchema() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSchemas"></a>
+                        <div class="element clickable method public  method_getSchemas" data-toggle="collapse" data-target=".method_getSchemas .collapse">
+                            <h2>Get schema list</h2>
+                            <pre>getSchemas() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_identifiers"></a>
+                        <div class="element clickable method public  method_identifiers" data-toggle="collapse" data-target=".method_identifiers .collapse">
+                            <h2>List only record headers</h2>
+                            <pre>identifiers(string $from, string $until, string $set = null) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$from</h4>
+                                                <code>string</code><p><p>Timestamp</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$until</h4>
+                                                <code>string</code><p><p>Timestamp</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$set</h4>
+                                                <code>string</code><p><p>Set to filter by</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>$this</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_identify"></a>
+                        <div class="element clickable method public  method_identify" data-toggle="collapse" data-target=".method_identify .collapse">
+                            <h2>Identify the service</h2>
+                            <pre>identify() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadProviders"></a>
+                        <div class="element clickable method private  method_loadProviders" data-toggle="collapse" data-target=".method_loadProviders .collapse">
+                            <h2>Load data providers</h2>
+                            <pre>loadProviders() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Calls plugin event and passes self to
+the event method where plugins can
+register providers.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadSchemas"></a>
+                        <div class="element clickable method private  method_loadSchemas" data-toggle="collapse" data-target=".method_loadSchemas .collapse">
+                            <h2>Load schemas</h2>
+                            <pre>loadSchemas() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_record"></a>
+                        <div class="element clickable method public  method_record" data-toggle="collapse" data-target=".method_record .collapse">
+                            <h2>Process a single record</h2>
+                            <pre>record(string $identifier) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$identifier</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>$this</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_records"></a>
+                        <div class="element clickable method public  method_records" data-toggle="collapse" data-target=".method_records .collapse">
+                            <h2>List records</h2>
+                            <pre>records(string $from, string $until, string $set = null, string $verb = &#039;ListRecords&#039;) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$from</h4>
+                                                <code>string</code><p><p>Timestamp</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$until</h4>
+                                                <code>string</code><p><p>Timestamp</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$set</h4>
+                                                <code>string</code><p><p>Set to filter by</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$verb</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>$this</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_register"></a>
+                        <div class="element clickable method public  method_register" data-toggle="collapse" data-target=".method_register .collapse">
+                            <h2>Register a provider</h2>
+                            <pre>register(string $key, object $provider) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$provider</h4>
+                                                <code>object</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setDbo"></a>
+                        <div class="element clickable method public  method_setDbo" data-toggle="collapse" data-target=".method_setDbo .collapse">
+                            <h2>Set the database connection</h2>
+                            <pre>setDbo(object $db) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$db</h4>
+                                                <code>object</code><p><p>Database connection</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>$this</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setResponse"></a>
+                        <div class="element clickable method public  method_setResponse" data-toggle="collapse" data-target=".method_setResponse .collapse">
+                            <h2>Set the response object</h2>
+                            <pre>setResponse(object $response) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$response</h4>
+                                                <code>object</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>$this</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sets"></a>
+                        <div class="element clickable method public  method_sets" data-toggle="collapse" data-target=".method_sets .collapse">
+                            <h2>List all sets</h2>
+                            <pre>sets() : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setSchema"></a>
+                        <div class="element clickable method public  method_setSchema" data-toggle="collapse" data-target=".method_setSchema .collapse">
+                            <h2>Set schema</h2>
+                            <pre>setSchema(mixed $type) : object</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\Exception</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_xml"></a>
+                        <div class="element clickable method public  method_xml" data-toggle="collapse" data-target=".method_xml .collapse">
+                            <h2>Get the final response as XML</h2>
+                            <pre>xml() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_ERROR_BAD_VERB"> </a>
+                            <div class="element clickable constant  constant_ERROR_BAD_VERB" data-toggle="collapse" data-target=".constant_ERROR_BAD_VERB .collapse">
+                                <h2>OAI-PMH error types</h2>
+                                <pre>ERROR_BAD_VERB</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR_BAD_ARGUMENT"> </a>
+                            <div class="element clickable constant  constant_ERROR_BAD_ARGUMENT" data-toggle="collapse" data-target=".constant_ERROR_BAD_ARGUMENT .collapse">
+                                <h2>ERROR_BAD_ARGUMENT</h2>
+                                <pre>ERROR_BAD_ARGUMENT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR_BAD_ID"> </a>
+                            <div class="element clickable constant  constant_ERROR_BAD_ID" data-toggle="collapse" data-target=".constant_ERROR_BAD_ID .collapse">
+                                <h2>ERROR_BAD_ID</h2>
+                                <pre>ERROR_BAD_ID</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR_BAD_FORMAT"> </a>
+                            <div class="element clickable constant  constant_ERROR_BAD_FORMAT" data-toggle="collapse" data-target=".constant_ERROR_BAD_FORMAT .collapse">
+                                <h2>ERROR_BAD_FORMAT</h2>
+                                <pre>ERROR_BAD_FORMAT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR_RECORD_NOT_FOUND"> </a>
+                            <div class="element clickable constant  constant_ERROR_RECORD_NOT_FOUND" data-toggle="collapse" data-target=".constant_ERROR_RECORD_NOT_FOUND .collapse">
+                                <h2>ERROR_RECORD_NOT_FOUND</h2>
+                                <pre>ERROR_RECORD_NOT_FOUND</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR_BAD_RESUMPTION_TOKEN"> </a>
+                            <div class="element clickable constant  constant_ERROR_BAD_RESUMPTION_TOKEN" data-toggle="collapse" data-target=".constant_ERROR_BAD_RESUMPTION_TOKEN .collapse">
+                                <h2>ERROR_BAD_RESUMPTION_TOKEN</h2>
+                                <pre>ERROR_BAD_RESUMPTION_TOKEN</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR_NO_SET_HIERARCHY"> </a>
+                            <div class="element clickable constant  constant_ERROR_NO_SET_HIERARCHY" data-toggle="collapse" data-target=".constant_ERROR_NO_SET_HIERARCHY .collapse">
+                                <h2>ERROR_NO_SET_HIERARCHY</h2>
+                                <pre>ERROR_NO_SET_HIERARCHY</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_schema"> </a>
+                            <div class="element clickable property  protected property_schema" data-toggle="collapse" data-target=".property_schema .collapse">
+                                <h2>Schema to use</h2>
+                                <pre>schema : object</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>object</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_schemas"> </a>
+                            <div class="element clickable property  protected property_schemas" data-toggle="collapse" data-target=".property_schemas .collapse">
+                                <h2>List of schemas</h2>
+                                <pre>schemas : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_response"> </a>
+                            <div class="element clickable property  protected property_response" data-toggle="collapse" data-target=".property_response .collapse">
+                                <h2>XML Response</h2>
+                                <pre>response : object</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>object</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_providers"> </a>
+                            <div class="element clickable property  protected property_providers" data-toggle="collapse" data-target=".property_providers .collapse">
+                                <h2>List of providers</h2>
+                                <pre>providers : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_database"> </a>
+                            <div class="element clickable property  protected property_database" data-toggle="collapse" data-target=".property_database .collapse">
+                                <h2>Database connection</h2>
+                                <pre>database : object</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>object</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Components\Oaipmh\Models\Service"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Components.Oaipmh.Models.html">Models</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Components.Oaipmh.Models.Service.html">Service</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Wed, 17 May 2017 19:46:06 +0000.<br/>
+    </footer>
+    </body>
+</html>
