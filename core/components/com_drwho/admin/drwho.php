@@ -71,11 +71,11 @@ require_once(__DIR__ . DS . 'controllers' . DS . $controllerName . '.php');
 // So, for a controller with the name of "show" in this component:
 //
 // /com_drwho
-//    /site
+//    /admin
 //        /controllers
 //            /show.php
 //
-// ... we get the final class name of "Components\Drwho\Site\Controllers\Show".
+// ... we get the final class name of "Components\Drwho\Admin\Controllers\Show".
 //
 // Typically, directories are plural (controllers, models, tables, helpers).
 $controllerName = __NAMESPACE__ . '\\Controllers\\' . ucfirst(strtolower($controllerName));
