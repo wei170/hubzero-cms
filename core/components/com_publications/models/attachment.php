@@ -1,6 +1,6 @@
 <?php
 /**
- * @package		HUBzero CMS
+ * @package		hubzero-cms
  * @author		Shawn Rice <zooley@purdue.edu>
  * @copyright	Copyright 2005-2009 HUBzero Foundation, LLC.
  * @license		http://opensource.org/licenses/MIT MIT

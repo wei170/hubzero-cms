@@ -1,6 +1,6 @@
 <?php
 /**
- * @package		HUBzero CMS
+ * @package		hubzero-cms
  * @author		Sudheera R. Fernando <sudheera@xconsole.org>
  * @copyright		Copyright (c) 2010-2015 HUBzero Foundation, LLC.
  * @license		http://opensource.org/licenses/MIT MIT

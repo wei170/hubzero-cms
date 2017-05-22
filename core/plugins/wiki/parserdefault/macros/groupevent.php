@@ -1,6 +1,6 @@
 <?php
 /**
- * HUBzero CMS
+ * hubzero-cms
  *
  * Copyright 2005-2015 HUBzero Foundation, LLC.
  *
@@ -24,7 +24,7 @@
  *
  * HUBzero is a registered trademark of Purdue University.
  *
- * @package		HUBzero CMS
+ * @package		hubzero-cms
  * @author		Christopher Smoak <csmoak@purdue.edu>
  * @copyright	Copyright 2005-2009 HUBzero Foundation, LLC.
  * @license		http://opensource.org/licenses/MIT MIT
