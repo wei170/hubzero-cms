@@ -451,6 +451,9 @@ class Credentials extends SiteController
 	 */
 	public function setpasswordTask()
 	{
+		// Get the type of measuring password strength
+		$passStrengthType= \Hubzero\User\Password::getPassStrengthType();
+
 		$rules = \Hubzero\Password\Rule::all()
 					->whereEquals('enabled', 1)
 					->rows();
@@ -469,6 +472,7 @@ class Credentials extends SiteController
 
 		$this->view
 			->set('password_rules', $password_rules)
+			->set('passStrengthType', $passStrengthType)
 			->display();
 	}
 

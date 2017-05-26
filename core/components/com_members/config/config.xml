@@ -311,6 +311,10 @@ HUBzero is a registered trademark of Purdue University.
 		<field name="gid" type="text" default="users" label="Group ID" />
 	</fieldset>
 	<fieldset name="PASSWORD">
+		<field name="passStrengthType" type="list" default="entropy" label="Methods of Checking Password Strength">
+			<option value="entropy">Entropy</option>
+			<option value="rules">Hard Rules</option>
+		</field>
 		<field name="passhash_mechanism" type="list" default="sha512" label="Password Hashing/Encryption Mechanism">
 			<option value="CRYPT_SHA512">SHA-512</option>
 			<option value="MD5">MD5</option>

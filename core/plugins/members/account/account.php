@@ -281,6 +281,9 @@ class plgMembersAccount extends \Hubzero\Plugin\Plugin
 		// Get the ssh key if it exists
 		$view->key = $this->readKey();
 
+		// Get the type of measuring password strength
+		$view->passStrengthType= \Hubzero\User\Password::getPassStrengthType();
+
 		// Get the password rules
 		$password_rules = \Hubzero\Password\Rule::all()
 			->whereEquals('enabled', 1)
@@ -524,6 +527,9 @@ class plgMembersAccount extends \Hubzero\Plugin\Plugin
 		// Add a few more variables to the view
 		$view->option = $this->option;
 		$view->id     = $this->user->get('id');
+
+		// Get the type of measuring password strength
+		$view->passStrengthType= \Hubzero\User\Password::getPassStrengthType();
 
 		// Get the password rules
 		$password_rules = \Hubzero\Password\Rule::all()
@@ -967,6 +973,9 @@ class plgMembersAccount extends \Hubzero\Plugin\Plugin
 	 */
 	public function checkPass()
 	{
+		// Get the type of measuring password strength
+		$view->passStrengthType= \Hubzero\User\Password::getPassStrengthType();
+
 		// Get the password rules
 		$password_rules = \Hubzero\Password\Rule::all()
 			->whereEquals('enabled', 1)

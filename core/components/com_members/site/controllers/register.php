@@ -898,6 +898,9 @@ class Register extends SiteController
 			$xregistration = new \Components\Members\Models\Registration();
 		}
 
+		// Get the type of measuring password strength
+		$passStrengthType= \Hubzero\User\Password::getPassStrengthType();
+
 		// Push some values to the view
 		$rules = \Hubzero\Password\Rule::all()
 			->whereEquals('enabled', 1)
@@ -970,6 +973,7 @@ class Register extends SiteController
 			->set('fields', $fields)
 			->set('showMissing', true)
 			->set('isSelf', $isSelf)
+			->set('passStrengthType', $passStrengthType)
 			->set('password_rules', $password_rules)
 			->set('xregistration', $xregistration)
 			->set('registration', $xregistration->_registration)

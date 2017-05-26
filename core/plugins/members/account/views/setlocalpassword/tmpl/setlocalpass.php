@@ -76,44 +76,49 @@ $this->css()
 				</div>
 			</div>
 
-			<?php
-				if (count($this->password_rules) > 0)
-				{
-					echo '<div id="passrules-container" class="setlocal">';
-					echo '<div id="passrules-subcontainer">';
-					echo '<h5>Password Rules</h5>';
-					echo '<ul id="passrules">';
-					foreach ($this->password_rules as $rule)
-					{
-						if (!empty($rule))
-						{
-							if (!empty($this->change) && is_array($this->change))
-							{
-								$err = in_array($rule, $this->change);
+			<div id="passrules-container">
+				<div id="passrules-subcontainer">
+					<h5>Password Rules</h5>
+					<?php if ($this->passStrengthType == 'entropy') : ?>
+						<ul id="passrules">
+							<li class="empty">Password Strength</li>
+						</ul>
+					<?php else : ?>
+						<?php
+							if (count($this->password_rules) > 0) {
+								echo '<ul id="passrules">';
+								foreach ($this->password_rules as $rule)
+								{
+									if (!empty($rule))
+									{
+										if (!empty($this->change) && is_array($this->change))
+										{
+											$err = in_array($rule, $this->change);
+										}
+										else
+										{
+											$err = '';
+										}
+										$mclass = ($err)  ? ' class="error"' : ' class="empty"';
+										echo "<li $mclass>".$rule."</li>";
+									}
+								}
+								if (!empty($this->change) && is_array($this->change))
+								{
+									foreach ($this->change as $msg)
+									{
+										if (!in_array($msg, $this->password_rules))
+										{
+											echo '<li class="error">'.$msg."</li>";
+										}
+									}
+								}
+								echo "</ul>";
 							}
-							else
-							{
-								$err = '';
-							}
-							$mclass = ($err)  ? ' class="error"' : ' class="empty"';
-							echo "<li $mclass>".$rule."</li>";
-						}
-					}
-					if (!empty($this->change) && is_array($this->change))
-					{
-						foreach ($this->change as $msg)
-						{
-							if (!in_array($msg, $this->password_rules))
-							{
-								echo '<li class="error">'.$msg."</li>";
-							}
-						}
-					}
-					echo "</ul>";
-					echo "</div>";
-					echo "</div>";
-				}
-			?>
+						?>
+					<?php endif; ?>
+				</div>
+			</div>
 
 		</fieldset>
 

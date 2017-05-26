@@ -252,34 +252,42 @@ if ($form_redirect = Request::getVar('return', '', 'get'))
 							</div>
 						<?php } ?>
 					</div>
-					<?php if (count($this->password_rules) > 0) { ?>
-						<ul id="passrules">
-							<?php foreach ($this->password_rules as $rule)
-							{
-								if (!empty($rule))
-								{
-									$err = '';
-									if (!empty($this->xregistration->_invalid['password']) && is_array($this->xregistration->_invalid['password']))
-									{
-										$err = in_array($rule, $this->xregistration->_invalid['password']);
-									}
 
-									echo '<li' . ($err ? ' class="error"' : ' class="empty"') . '>' . $rule . '</li>' . "\n";
-								}
-							}
-							if (!empty($this->xregistration->_invalid['password']) && is_array($this->xregistration->_invalid['password']))
-							{
-								foreach ($this->xregistration->_invalid['password'] as $msg)
+	
+					<?php if ($this->passStrengthType == 'entropy') : ?>
+						<ul id="passrules">
+							<li class="empty">Password Strength</li>
+						</ul>
+					<?php else : ?>
+						<?php if (count($this->password_rules) > 0) { ?>
+							<ul id="passrules">
+								<?php foreach ($this->password_rules as $rule)
 								{
-									if (!in_array($msg, $this->password_rules))
+									if (!empty($rule))
 									{
-										echo '<li class="error">' . $msg . '</li>'."\n";
+										$err = '';
+										if (!empty($this->xregistration->_invalid['password']) && is_array($this->xregistration->_invalid['password']))
+										{
+											$err = in_array($rule, $this->xregistration->_invalid['password']);
+										}
+
+										echo '<li' . ($err ? ' class="error"' : ' class="empty"') . '>' . $rule . '</li>' . "\n";
 									}
 								}
-							}
-							?>
-						</ul>
-					<?php } ?>
+								if (!empty($this->xregistration->_invalid['password']) && is_array($this->xregistration->_invalid['password']))
+								{
+									foreach ($this->xregistration->_invalid['password'] as $msg)
+									{
+										if (!in_array($msg, $this->password_rules))
+										{
+											echo '<li class="error">' . $msg . '</li>'."\n";
+										}
+									}
+								}
+								?>
+							</ul>
+						<?php } ?>
+					<?php endif; ?>
 				<?php } ?>
 			</fieldset>
 			<div class="clear"></div>

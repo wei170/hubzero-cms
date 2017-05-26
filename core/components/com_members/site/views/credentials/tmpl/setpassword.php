@@ -62,14 +62,20 @@ $this->js('setpassword')
 			</label>
 			<input type="password" name="password2" tabindex="2" />
 
-			<?php if (count($this->password_rules) > 0) : ?>
+			<?php if ($this->passStrengthType == 'entropy') : ?>
 				<ul id="passrules">
-					<?php foreach ($this->password_rules as $rule) : ?>
-						<?php if (!empty($rule)) : ?>
-							<li class="empty"><?php echo $rule; ?></li>
-						<?php endif; ?>
-					<?php endforeach; ?>
+					<li class="empty">Password Strength</li>
 				</ul>
+			<?php else : ?>
+				<?php if (count($this->password_rules) > 0) : ?>
+					<ul id="passrules">
+						<?php foreach ($this->password_rules as $rule) : ?>
+							<?php if (!empty($rule)) : ?>
+								<li class="empty"><?php echo $rule; ?></li>
+							<?php endif; ?>
+						<?php endforeach; ?>
+					</ul>
+				<?php endif; ?>
 			<?php endif; ?>
 		</fieldset>
 		<div class="clear"></div>
