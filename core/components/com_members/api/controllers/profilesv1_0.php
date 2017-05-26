@@ -544,24 +544,32 @@ class Profilesv1_0 extends ApiController
 		// Use zxcvbn plugin to meature password entropy
 		$zxcvbn = new Zxcvbn();
 		$strength = $zxcvbn->passwordStrength($pw);
-		// add the score into the response
-		switch ($strength['score']) {
+		// add the score level into the response
+		switch ($strength['score'])
+		{
 		case 0:
 			$entropy = 'Too Weak';
 			break;
+
 		case 1:
 			$entropy = 'Weak';
 			break;
+
 		case 2:
 			$entropy = 'Normal';
 			break;
+			
 		case 3:
 			$entropy = 'Stronge';
 			break;
 		case 4:
 			$entropy = 'Unbreakable';
 			break;
+
+		default:
+			$entropy = 'Enter a password';
 		}	
+
 		$mclass = ($strength['score'] < 2) ? 'class="error"' : 'class="passed"';
 		$html .= "<li $mclass>" . $entropy . '</li>';
 
