@@ -14,24 +14,35 @@ jQuery(document).ready(function (jq) {
 		passrule = $('#passrules'),
 		password = $('#newpass'),
 		passsave = $('#password-change-save');
+	
+	// Wait the user stop typing
+	var delay = (function() {
+		var timer = 0;
+		return function(callback, ms) {
+			clearTimeout(timer);
+			timer = setTimeout(callback, ms);
+		};
+	})();
 
 	password.on('keyup', function(){
-		// Create an ajax call to check the potential password
-		$.ajax({
-			url: "/api/members/checkpass",
-			type: "POST",
-			data: "password1="+password.val(),
-			dataType: "json",
-			cache: false,
-			success: function(json) {
-				if(json.html.length > 0 && password.val() !== '') {
-					passrule.html(json.html);
-				} else {
-					// Probably deleted password, so reset classes
-					passrule.find('li').switchClass('error passed', 'empty', 200);
+		delay(function() {
+			// Create an ajax call to check the potential password
+			$.ajax({
+				url: "/api/members/checkpass",
+				type: "POST",
+				data: "password1="+$('#newpass').val(),
+				dataType: "json",
+				cache: false,
+				success: function(json) {
+					if(json.html.length > 0 && password.val() !== '') {
+						passrule.html(json.html);
+					} else {
+						// Probably deleted password, so reset classes
+						passrule.find('li').switchClass('error passed', 'empty', 200);
+					}
 				}
-			}
-		});
+			});
+		}, 1000)
 	});
 
 	passsave.on('click', function(e){

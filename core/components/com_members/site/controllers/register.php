@@ -901,18 +901,21 @@ class Register extends SiteController
 		// Get the type of measuring password strength
 		$passStrengthType= \Hubzero\User\Password::getPassStrengthType();
 
-		// Push some values to the view
-		$rules = \Hubzero\Password\Rule::all()
-			->whereEquals('enabled', 1)
-			->rows();
-
 		$password_rules = array();
 
-		foreach ($rules as $rule)
+		if ($passStrengthType == 'rules')
 		{
-			if (!empty($rule['description']))
+			// Push some values to the view
+			$rules = \Hubzero\Password\Rule::all()
+				->whereEquals('enabled', 1)
+				->rows();
+
+			foreach ($rules as $rule)
 			{
-				$password_rules[] = $rule['description'];
+				if (!empty($rule['description']))
+				{
+					$password_rules[] = $rule['description'];
+				}
 			}
 		}
 

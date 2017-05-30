@@ -282,20 +282,24 @@ class plgMembersAccount extends \Hubzero\Plugin\Plugin
 		$view->key = $this->readKey();
 
 		// Get the type of measuring password strength
-		$view->passStrengthType= \Hubzero\User\Password::getPassStrengthType();
-
-		// Get the password rules
-		$password_rules = \Hubzero\Password\Rule::all()
-			->whereEquals('enabled', 1)
-			->rows();
+		$view->passStrengthType = \Hubzero\User\Password::getPassStrengthType();
 
 		// Get the password rule descriptions
 		$view->password_rules = array();
-		foreach ($password_rules as $rule)
+
+		if ($view->passStrengthType == 'rules')
 		{
-			if (!empty($rule['description']))
+			// Get the password rules
+			$password_rules = \Hubzero\Password\Rule::all()
+				->whereEquals('enabled', 1)
+				->rows();
+
+			foreach ($password_rules as $rule)
 			{
-				$view->password_rules[] = $rule['description'];
+				if (!empty($rule['description']))
+				{
+					$view->password_rules[] = $rule['description'];
+				}
 			}
 		}
 
@@ -974,66 +978,80 @@ class plgMembersAccount extends \Hubzero\Plugin\Plugin
 	public function checkPass()
 	{
 		// Get the type of measuring password strength
-		$view->passStrengthType= \Hubzero\User\Password::getPassStrengthType();
-
-		// Get the password rules
-		$password_rules = \Hubzero\Password\Rule::all()
-			->whereEquals('enabled', 1)
-			->rows();
-
-		$pw_rules = array();
-
-		// Get the password rule descriptions
-		foreach ($password_rules as $rule)
-		{
-			if (!empty($rule['description']))
-			{
-				$pw_rules[] = $rule['description'];
-			}
-		}
+		$passStrengthType = \Hubzero\User\Password::getPassStrengthType();
 
 		// Get the password
 		$pw = Request::getVar('password1', null, 'post');
 
-		// Validate the password
-		if (!empty($pw))
+		// Check the measure of password strength
+		switch ($passStrengthType)
 		{
-			$msg = \Hubzero\Password\Rule::verify($pw, $password_rules, $this->member->get('username'));
-		}
-		else
-		{
-			$msg = array();
-		}
+			// Use entropy to meature password strength
+			case 'entropy':
+				$entropy = \Hubzero\User\Password::getEntropyLevel($pw);
 
-		// Iterate through the rules and add the appropriate classes (passed/error)
-		if (count($pw_rules) > 0)
-		{
-			foreach ($pw_rules as $rule)
-			{
-				if (!empty($rule))
+				$mclass = ($entropy['score'] < 2) ? 'class="error"' : 'class="passed"';
+				echo "<li $mclass>" . $entropy['type'] . '</li>';
+				break;
+
+			// Use rules to meature password strength
+			case 'rules':
+				// Get the password rules
+				$password_rules = \Hubzero\Password\Rule::all()
+					->whereEquals('enabled', 1)
+					->rows();
+
+				$pw_rules = array();
+
+				// Get the password rule descriptions
+				foreach ($password_rules as $rule)
 				{
+					if (!empty($rule['description']))
+					{
+						$pw_rules[] = $rule['description'];
+					}
+				}
+
+				// Validate the password
+				if (!empty($pw))
+				{
+					$msg = \Hubzero\Password\Rule::verify($pw, $password_rules, $this->member->get('username'));
+				}
+				else
+				{
+					$msg = array();
+				}
+
+				// Iterate through the rules and add the appropriate classes (passed/error)
+				if (count($pw_rules) > 0)
+				{
+					foreach ($pw_rules as $rule)
+					{
+						if (!empty($rule))
+						{
+							if (!empty($msg) && is_array($msg))
+							{
+								$err = in_array($rule, $msg);
+							}
+							else
+							{
+								$err = '';
+							}
+							$mclass = ($err)  ? ' class="error"' : 'class="passed"';
+							echo "<li $mclass>".$rule."</li>";
+						}
+					}
 					if (!empty($msg) && is_array($msg))
 					{
-						$err = in_array($rule, $msg);
-					}
-					else
-					{
-						$err = '';
-					}
-					$mclass = ($err)  ? ' class="error"' : 'class="passed"';
-					echo "<li $mclass>".$rule."</li>";
-				}
-			}
-			if (!empty($msg) && is_array($msg))
-			{
-				foreach ($msg as $message)
-				{
-					if (!in_array($message, $pw_rules))
-					{
-						echo '<li class="error">'.$message."</li>";
+						foreach ($msg as $message)
+						{
+							if (!in_array($message, $pw_rules))
+							{
+								echo '<li class="error">'.$message."</li>";
+							}
+						}
 					}
 				}
-			}
 		}
 
 		// Exit - don't go any further (i.e. no joomla template stuff)

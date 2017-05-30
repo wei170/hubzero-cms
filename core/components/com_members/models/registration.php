@@ -589,32 +589,32 @@ class Registration
 
 		if ($registrationPassword == REG_REQUIRED)
 		{
-			$score = $this->scorePassword($registration['password'], $registration['login']);
-			if ($score < PASS_SCORE_MEDIOCRE)
-			{
-				$this->_invalid['password'] = 'Password strength is too weak.';
-			}
-			else if ($score >= PASS_SCORE_MEDIOCRE && $score < PASS_SCORE_GOOD)
-			{
-				// Mediocre pass
-			}
-			else if ($score >= PASS_SCORE_GOOD && $score < PASS_SCORE_STRONG)
-			{
-				// Good pass
-			}
-			else if ($score >= PASS_SCORE_STRONG)
-			{
-				// Strong pass
-			}
+			// Get the type of measuring password strength
+			$passStrengthType = \Hubzero\User\Password::getPassStrengthType();
 
-			$rules = \Hubzero\Password\Rule::all()
-				->whereEquals('enabled', 1)
-				->rows();
-
-			$msg = \Hubzero\Password\Rule::verify($registration['password'], $rules, $login, $registration['name']);
-			if (!empty($msg))
+			if ($passStrengthType == 'entropy')
 			{
-				$this->_invalid['password'] = $msg;
+				// Use entropy to meature the password strength
+				$entropy = \Hubzero\User\Password::getEntropyLevel($registration['password']);
+
+				// If the strength is weak, push errors
+				if ($entropy['score'] < 2)
+				{
+					$this->_invalid['password'] = 
+						'Password strength is ' . $entropy['type'];
+				}
+			}
+			else if ($passStrengthType == 'rules')
+			{
+				$rules = \Hubzero\Password\Rule::all()
+					->whereEquals('enabled', 1)
+					->rows();
+
+				$msg = \Hubzero\Password\Rule::verify($registration['password'], $rules, $login, $registration['name']);
+				if (!empty($msg))
+				{
+					$this->_invalid['password'] = $msg;
+				}
 			}
 		}
 

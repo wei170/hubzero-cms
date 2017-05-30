@@ -21,6 +21,16 @@ if (!jq) {
 //----------------------------------------------------------
 // Members account
 //----------------------------------------------------------
+
+// Wait the user stop typing
+var delay = (function() {
+	var timer = 0;
+	return function(callback, ms) {
+		clearTimeout(timer);
+		timer = setTimeout(callback, ms);
+	};
+})();
+
 HUB.Plugins.MembersAccount = {
 	jQuery: jq,
 
@@ -74,32 +84,34 @@ HUB.Plugins.MembersAccount = {
 	}, // end initialize
 
 	checkPass: function() {
-		var $ = HUB.Plugins.MembersAccount.jQuery;
+		delay(function() {
+			var $ = HUB.Plugins.MembersAccount.jQuery;
 
-		var passrule  = $('#passrules');
-		var pass = $('#password1');
-		if(pass.length == 0) {
-			pass = $('#newpass1');
-		}
-
-		// Create an ajax call to check the potential password
-		$.ajax({
-			url: "index.php?option=com_members&task=myaccount&active=account&action=checkPass",
-			type: "POST",
-			data: {"password1": pass.val()},
-			dataType: "html",
-			cache: false,
-			success: function(html){
-				if (html.length > 0 && pass.val() != '') {
-					passrule.html(html);
-				}
-				else
-				{
-					// Probably deleted password, so reset classes
-					passrule.find('li').switchClass('error passed', 'empty', 200);
-				}
+			var passrule  = $('#passrules');
+			var pass = $('#password1');
+			if(pass.length == 0) {
+				pass = $('#newpass1');
 			}
-		});
+
+			// Create an ajax call to check the potential password
+			$.ajax({
+				url: "index.php?option=com_members&task=myaccount&active=account&action=checkPass",
+				type: "POST",
+				data: {"password1": pass.val()},
+				dataType: "html",
+				cache: false,
+				success: function(html){
+					if (html.length > 0 && pass.val() != '') {
+						passrule.html(html);
+					}
+					else
+					{
+						// Probably deleted password, so reset classes
+						passrule.find('li').switchClass('error passed', 'empty', 200);
+					}
+				}
+			});
+		}, 1000);
 	}, // end checkPass
 
 	passSave: function(e) {

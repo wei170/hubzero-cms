@@ -44,8 +44,6 @@ use Lang;
 use User;
 use App;
 
-use ZxcvbnPhp\Zxcvbn;
-
 include_once(dirname(dirname(__DIR__)) . DS . 'models' . DS . 'member.php');
 include_once(dirname(dirname(__DIR__)) . DS . 'models' . DS . 'profile' . DS . 'field.php');
 include_once(dirname(dirname(__DIR__)) . DS . 'helpers' . DS . 'filters.php');
@@ -488,36 +486,10 @@ class Profilesv1_0 extends ApiController
 		{
 			// Use entropy to meature password strength
 			case 'entropy':
-				$zxcvbn = new Zxcvbn();
-				$strength = $zxcvbn->passwordStrength($pw);
-				// add the score level into the response
-				switch ($strength['score'])
-				{
-				case 0:
-					$entropy = 'Too Weak';
-					break;
+				$entropy = \Hubzero\User\Password::getEntropyLevel($pw);
 
-				case 1:
-					$entropy = 'Weak';
-					break;
-
-				case 2:
-					$entropy = 'Normal';
-					break;
-
-				case 3:
-					$entropy = 'Stronge';
-					break;
-				case 4:
-					$entropy = 'Unbreakable';
-					break;
-
-				default:
-					$entropy = 'Enter a password';
-				}	
-
-				$mclass = ($strength['score'] < 2) ? 'class="error"' : 'class="passed"';
-				$html .= "<li $mclass>" . $entropy . '</li>';
+				$mclass = ($entropy['score'] < 2) ? 'class="error"' : 'class="passed"';
+				$html .= "<li $mclass>" . $entropy['type'] . '</li>';
 				break;
 
 			// Use rules to meature password strength

@@ -102,24 +102,35 @@ jQuery(document).ready(function($){
 	var passwd = $('#password');
 	var passrule = $('#passrules');
 
+	// Wait the user stop typing
+	var delay = (function() {
+		var timer = 0;
+		return function(callback, ms) {
+			clearTimeout(timer);
+			timer = setTimeout(callback, ms);
+		};
+	})();
+
 	if (passwd.length > 0 && passrule.length > 0) {
 		passwd.on('keyup', function(){
-			// Create an ajax call to check the potential password
-			$.ajax({
-				url: "/api/members/checkpass",
-				type: "POST",
-				data: "password1="+passwd.val(),
-				dataType: "json",
-				cache: false,
-				success: function(json) {
-					if (json.html.length > 0 && passwd.val() !== '') {
-						passrule.html(json.html);
-					} else {
-						// Probably deleted password, so reset classes
-						passrule.find('li').switchClass('error passed', 'empty', 200);
+			delay(function() {
+				// Create an ajax call to check the potential password
+				$.ajax({
+					url: "/api/members/checkpass",
+					type: "POST",
+					data: "password1="+$('#password').val(),
+					dataType: "json",
+					cache: false,
+					success: function(json) {
+						if (json.html.length > 0 && passwd.val() !== '') {
+							passrule.html(json.html);
+						} else {
+							// Probably deleted password, so reset classes
+							passrule.find('li').switchClass('error passed', 'empty', 200);
+						}
 					}
-				}
-			});
+				});
+			}, 1000)
 		});
 	}
 
