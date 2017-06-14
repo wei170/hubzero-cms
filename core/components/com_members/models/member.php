@@ -110,7 +110,7 @@ class Member extends User
 	 */
 	public function auths()
 	{
-		return $this->oneToMany('\Hubzero\User\Log\Auth', 'user_id');
+		return $this->oneToMany('\Hubzero\User\Log\Auth', 'username', 'username');
 	}
 
 	/**

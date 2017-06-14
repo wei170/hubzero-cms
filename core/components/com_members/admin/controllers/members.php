@@ -143,8 +143,7 @@ class Members extends AdminController
 			),
 			'status' => Request::getState(
 				$this->_option . '.' . $this->_controller . '.status',
-				'status',
-				'*'
+				'status'
 			)
 		);
 
@@ -173,8 +172,9 @@ class Members extends AdminController
 
 		if ($filters['status'])
 		{
-			/* $entries */
-			/* 	->whereEquals($c . '.status', (int)$filters['status']); */
+			$entries
+				->join($c, $c . '.username', $a . '.username', 'left')
+				->whereEquals($c . '.status', (int)$filters['status']);
 		}
 
 		if ($filters['group_id'])

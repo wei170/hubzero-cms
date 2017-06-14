@@ -269,9 +269,9 @@ class Admin
 	{
 		// Build the filter options.
 		$options = array();
-		$options[] = Html::select('option', '0', Lang::txt('COM_MEMBERS_OPTION_AUTH_SUCCESS'));
-		$options[] = Html::select('option', '0', Lang::txt('COM_MEMBERS_OPTION_AUTH_FAILURE'));
-		$options[] = Html::select('option', '0', Lang::txt('COM_MEMBERS_OPTION_AUTH_BLOCKED'));
+		$options[] = Html::select('option', 'success', Lang::txt('COM_MEMBERS_OPTION_AUTH_SUCCESS'));
+		$options[] = Html::select('option', 'failure', Lang::txt('COM_MEMBERS_OPTION_AUTH_FAILURE'));
+		$options[] = Html::select('option', 'blocked', Lang::txt('COM_MEMBERS_OPTION_AUTH_BLOCKED'));
 
 		return $options;
 	}

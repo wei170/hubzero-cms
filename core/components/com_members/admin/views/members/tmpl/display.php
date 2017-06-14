@@ -143,7 +143,7 @@ function submitbutton(pressbutton)
 
 				<label for="filter-range"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE'); ?>:</label>
 				<select name="range" id="filter-range" class="inputbox" onchange="this.form.submit()">
-					<option value=""><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE');?></option>
+					<option value="*"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE');?></option>
 					<?php echo Html::select('options', Components\Members\Helpers\Admin::getRangeOptions(), 'value', 'text', $this->filters['range']); ?>
 				</select>
 			</div>
@@ -230,6 +230,7 @@ function submitbutton(pressbutton)
 					$state = 'unpublish';
 					break;
 			}
+
 
 			$groups = array();
 			foreach ($row->accessgroups as $agroup)
@@ -349,12 +350,17 @@ function submitbutton(pressbutton)
 						<time datetime="<?php echo Date::of($row->get('lastvisitDate'))->format('Y-m-dTh:i:s'); ?>"><?php echo Date::of($row->get('lastvisitDate'))->toLocal('Y-m-d H:i:s'); ?></time>
 					<?php endif; ?>
 				</td>
-				<td class="center priority-3">
+				<td class="priority-3">
 					<?php $status = $row->auths->last()['status']; ?>
 					<?php if (!$status) : ?>
 						<span class="never" style="color:#bbb;"><?php echo Lang::txt('COM_MEMBERS_NEVER'); ?></span>
 					<?php else: ?>
-						<?php echo $status ?>
+						<span class="text"><?php echo $status ?></span>
+						<?php if ($canChange) : ?>
+							<?php echo Html::grid('boolean', $i, $row->auths->last()['status'] != 'blocked', 'release', null); ?>
+						<?php else : ?>
+							<?php echo Html::grid('boolean', $i, $row->auths->last()['status'] != 'blocked', null, null); ?>
+						<?php endif; ?>
 					<?php endif; ?>
 				</td>
 				<td class="center priority-3">
