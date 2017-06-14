@@ -140,6 +140,11 @@ class Members extends AdminController
 				$this->_option . '.' . $this->_controller . '.range',
 				'range',
 				''
+			),
+			'status' => Request::getState(
+				$this->_option . '.' . $this->_controller . '.status',
+				'status',
+				'*'
 			)
 		);
 
@@ -148,6 +153,7 @@ class Members extends AdminController
 
 		$a = $entries->getTableName();
 		$b = '#__user_usergroup_map';
+		$c = '#__users_log_auth';
 
 		$entries
 			->select($a . '.*')
@@ -159,7 +165,17 @@ class Members extends AdminController
 				$note
 					->select('id')
 					->select('user_id');
+			}])
+			->including(['auths', function ($auth) {
+				$auth
+					->select('*');
 			}]);
+
+		if ($filters['status'])
+		{
+			/* $entries */
+			/* 	->whereEquals($c . '.status', (int)$filters['status']); */
+		}
 
 		if ($filters['group_id'])
 		{

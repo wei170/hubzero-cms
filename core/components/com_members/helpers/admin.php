@@ -259,4 +259,20 @@ class Admin
 
 		return implode("\n", $html);
 	}
+
+	/**
+	 * Get a list of filter options for users log auth status.
+	 *
+	 * @return  array  An array of Option elements.
+	 */
+	public static function getAuthStatusOptions()
+	{
+		// Build the filter options.
+		$options = array();
+		$options[] = Html::select('option', '0', Lang::txt('COM_MEMBERS_OPTION_AUTH_SUCCESS'));
+		$options[] = Html::select('option', '0', Lang::txt('COM_MEMBERS_OPTION_AUTH_FAILURE'));
+		$options[] = Html::select('option', '0', Lang::txt('COM_MEMBERS_OPTION_AUTH_BLOCKED'));
+
+		return $options;
+	}
 }

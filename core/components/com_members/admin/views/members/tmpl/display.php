@@ -1,3 +1,4 @@
+
 <?php
 /**
  * HUBzero CMS
@@ -133,6 +134,13 @@ function submitbutton(pressbutton)
 					<?php echo Html::select('options', Components\Members\Helpers\Admin::getAccessGroups(), 'value', 'text', $this->filters['group_id']); ?>
 				</select>
 
+				<label for="filter-status"><?php echo Lang::txt('COM_MEMBERS_FILTER_STATUS'); ?>:</label>
+				<select name="status" id="filter-status" onchange="this.form.submit()">
+					<option value=""><?php echo Lang::txt('COM_MEMBERS_FILTER_STATUS');?></option>
+					<?php echo Html::select('options', Components\Members\Helpers\Admin::getAuthStatusOptions(), 'value', 'text', $this->filters['status']); ?>
+				</select>
+
+
 				<label for="filter-range"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE'); ?>:</label>
 				<select name="range" id="filter-range" class="inputbox" onchange="this.form.submit()">
 					<option value=""><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE');?></option>
@@ -155,6 +163,7 @@ function submitbutton(pressbutton)
 				<th scope="col" class="nowrap"><?php echo Html::grid('sort', 'COM_MEMBERS_HEADING_APPROVED', 'approved', @$this->filters['sort_Dir'], @$this->filters['sort']); ?></th>
 				<th scope="col" class="priority-3" colspan="2"><?php echo Html::grid('sort', 'COM_MEMBERS_COL_REGISTERED', 'registerDate', @$this->filters['sort_Dir'], @$this->filters['sort']); ?></th>
 				<th scope="col" class="priority-6"><?php echo Html::grid('sort', 'COM_MEMBERS_COL_LAST_VISIT', 'lastvisitDate', @$this->filters['sort_Dir'], @$this->filters['sort']); ?></th>
+				<th scope="col" class="priority-3" colspan="2""><?php echo Lang::txt('COM_MEMBERS_COL_STATUS'); ?></th>
 			</tr>
 		</thead>
 		<tfoot>
@@ -241,6 +250,7 @@ function submitbutton(pressbutton)
 				}
 				$incomplete = true;
 			}
+
 			?>
 			<tr class="<?php echo "row$k"; ?>">
 				<td>
@@ -337,6 +347,21 @@ function submitbutton(pressbutton)
 						<span class="never" style="color:#bbb;"><?php echo Lang::txt('COM_MEMBERS_NEVER'); ?></span>
 					<?php else: ?>
 						<time datetime="<?php echo Date::of($row->get('lastvisitDate'))->format('Y-m-dTh:i:s'); ?>"><?php echo Date::of($row->get('lastvisitDate'))->toLocal('Y-m-d H:i:s'); ?></time>
+					<?php endif; ?>
+				</td>
+				<td class="center priority-3">
+					<?php $status = $row->auths->last()['status']; ?>
+					<?php if (!$status) : ?>
+						<span class="never" style="color:#bbb;"><?php echo Lang::txt('COM_MEMBERS_NEVER'); ?></span>
+					<?php else: ?>
+						<?php echo $status ?>
+					<?php endif; ?>
+				</td>
+				<td class="center priority-3">
+					<?php if (!$status) : ?>
+						<span class="never" style="color:#bbb;"><?php echo Lang::txt('COM_MEMBERS_NEVER'); ?></span>
+					<?php else: ?>
+						<time datetime="<?php echo Date::of($row->auths->last()['logged'])->format('Y-m-dTh:i:s'); ?>"><?php echo Date::of($row->auths->last()['logged'])->toLocal('Y-m-d H:i:s'); ?></time>
 					<?php endif; ?>
 				</td>
 			</tr>

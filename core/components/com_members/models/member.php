@@ -104,6 +104,16 @@ class Member extends User
 	}
 
 	/**
+	 * Get users log auth
+	 *
+	 * @return	object
+	 */
+	public function auths()
+	{
+		return $this->oneToMany('\Hubzero\User\Log\Auth', 'user_id');
+	}
+
+	/**
 	 * Gets an attribute by key
 	 *
 	 * This will not retrieve properties directly attached to the model,
