@@ -37,6 +37,7 @@ use Components\Members\Models\Profile;
 use Components\Members\Models\Profile\Field;
 use Components\Members\Models\Profile\Option;
 use Hubzero\Access\Group as Accessgroup;
+use Hubzero\User\Log\Auth;
 use Hubzero\Access\Access;
 use Hubzero\Component\AdminController;
 use Hubzero\Utility\Validate;
@@ -1459,5 +1460,42 @@ class Members extends AdminController
 
 		// Redirect
 		$this->cancelTask();
+	}
+
+	/**
+	 * Toggle the log_auth block punishment
+	 *
+	 * @return  void
+	 */
+	public function punishTask()
+	{
+		// Incoming id is users_log_auth id
+		$id = Request::getVar('id', array(0));
+
+		// Get the single ID we're working with
+		if (is_array($id))
+		{
+			$id = (!empty($id)) ? $id[0] : 0;
+		}
+
+		// Initiate database class and load info
+		$auth = Auth::one($id);
+
+		// Toggle the status
+		if ($auth->get('status') == 'blocked')
+		{
+			$auth->set('status', 'failure');
+		}
+		else
+		{
+			$auth->set('status', 'blocked');
+		}
+
+		// save the changing
+		$auth->save();
+
+		Notify::success(Lang::txt('COM_MEMBERS_AUTH_STATUS_CHANGED'));
+
+		return $this->cancelTask();
 	}
 }

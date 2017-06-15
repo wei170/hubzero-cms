@@ -272,7 +272,7 @@ function submitbutton(pressbutton)
 								<span><?php echo Lang::txt('COM_USERS_NOTES'); ?></span>
 							</a>
 						<?php endif; ?>
-						<a class="state notes" href="<?php echo Route::url('index.php?option=' . $this->option . '&controller=notes&task=add&user_id=' . (int) $row->get('id')); ?>" title="<?php echo Lang::txt('COM_USERS_ADD_NOTE'); ?>">
+						<a class="state notes" href="<?php echo Route::url('index.php?option=' . $this->option . '&controller=notes&task=add&user_id=' . (int) $row->get('id')); ?>" title="<?php echo Lang::txt('COM_MEMBERS_USER_ADD_NOTE'); ?>">
 							<span><?php echo Lang::txt('COM_USERS_NOTES'); ?></span>
 						</a>
 					</div>
@@ -350,16 +350,20 @@ function submitbutton(pressbutton)
 						<time datetime="<?php echo Date::of($row->get('lastvisitDate'))->format('Y-m-dTh:i:s'); ?>"><?php echo Date::of($row->get('lastvisitDate'))->toLocal('Y-m-d H:i:s'); ?></time>
 					<?php endif; ?>
 				</td>
-				<td class="priority-3">
+				<td class="center priority-3">
 					<?php $status = $row->auths->last()['status']; ?>
+					<?php $authID = $row->auths->last()['id']; ?>
 					<?php if (!$status) : ?>
 						<span class="never" style="color:#bbb;"><?php echo Lang::txt('COM_MEMBERS_NEVER'); ?></span>
 					<?php else: ?>
-						<span class="text"><?php echo $status ?></span>
 						<?php if ($canChange) : ?>
-							<?php echo Html::grid('boolean', $i, $row->auths->last()['status'] != 'blocked', 'release', null); ?>
+							<a class="permissions button" href="<?php echo Route::url('index.php?option=' . $this->option . '&controller=' . $this->controller . '&task=punish&id=' . $authID);?>" title="<?php echo ($status == 'blocked' ? Lang::txt('COM_MEMBERS_AUTH_RELEASE') : Lang::txt('COM_MEMBERS_AUTH_BLOCK')); ?>">
+								<?php echo $status ?>
+							</a>
 						<?php else : ?>
-							<?php echo Html::grid('boolean', $i, $row->auths->last()['status'] != 'blocked', null, null); ?>
+							<a class="permissions button"  title="<?php echo ($status == 'blocked' ? Lang::txt('COM_MEMBERS_AUTH_RELEASE') : Lang::txt('COM_MEMBERS_AUTH_BLOCK')); ?>">
+								<?php echo $status ?>
+							</a>
 						<?php endif; ?>
 					<?php endif; ?>
 				</td>
