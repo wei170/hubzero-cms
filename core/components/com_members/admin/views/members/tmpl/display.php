@@ -134,13 +134,6 @@ function submitbutton(pressbutton)
 					<?php echo Html::select('options', Components\Members\Helpers\Admin::getAccessGroups(), 'value', 'text', $this->filters['group_id']); ?>
 				</select>
 
-				<label for="filter-status"><?php echo Lang::txt('COM_MEMBERS_FILTER_STATUS'); ?>:</label>
-				<select name="status" id="filter-status" onchange="this.form.submit()">
-					<option value=""><?php echo Lang::txt('COM_MEMBERS_FILTER_STATUS');?></option>
-					<?php echo Html::select('options', Components\Members\Helpers\Admin::getAuthStatusOptions(), 'value', 'text', $this->filters['status']); ?>
-				</select>
-
-
 				<label for="filter-range"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE'); ?>:</label>
 				<select name="range" id="filter-range" class="inputbox" onchange="this.form.submit()">
 					<option value="*"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE');?></option>

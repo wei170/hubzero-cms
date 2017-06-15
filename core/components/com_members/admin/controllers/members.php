@@ -175,7 +175,7 @@ class Members extends AdminController
 		{
 			$entries
 				->join($c, $c . '.username', $a . '.username', 'left')
-				->whereEquals($c . '.status', (int)$filters['status']);
+				->whereEquals($c . '.status', (string)$filters['status']);
 		}
 
 		if ($filters['group_id'])
