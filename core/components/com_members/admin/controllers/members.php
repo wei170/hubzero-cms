@@ -141,10 +141,6 @@ class Members extends AdminController
 				$this->_option . '.' . $this->_controller . '.range',
 				'range',
 				''
-			),
-			'status' => Request::getState(
-				$this->_option . '.' . $this->_controller . '.status',
-				'status'
 			)
 		);
 
@@ -170,13 +166,6 @@ class Members extends AdminController
 				$auth
 					->select('*');
 			}]);
-
-		if ($filters['status'])
-		{
-			$entries
-				->join($c, $c . '.username', $a . '.username', 'left')
-				->whereEquals($c . '.status', (string)$filters['status']);
-		}
 
 		if ($filters['group_id'])
 		{
@@ -1484,7 +1473,7 @@ class Members extends AdminController
 		// Toggle the status
 		if ($auth->get('status') == 'blocked')
 		{
-			$auth->set('status', 'failure');
+			$auth->set('status', 'released');
 		}
 		else
 		{
