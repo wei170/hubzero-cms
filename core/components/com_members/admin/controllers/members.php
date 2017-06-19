@@ -149,7 +149,6 @@ class Members extends AdminController
 
 		$a = $entries->getTableName();
 		$b = '#__user_usergroup_map';
-		$c = '#__users_log_auth';
 
 		$entries
 			->select($a . '.*')
@@ -1470,14 +1469,25 @@ class Members extends AdminController
 		// Initiate database class and load info
 		$auth = Auth::one($id);
 
+		// Find the user
+		$user = Hubzero\User\User::all()
+			->whereEquals('username', $auth->get('username'))
+			->row();
+
 		// Toggle the status
 		if ($auth->get('status') == 'blocked')
 		{
-			$auth->set('status', 'released');
+			$user->logger()->auth()->save([
+				'username'	=> $auth->get('username'),
+				'status'	=> 'released'
+			]);
 		}
 		else
 		{
-			$auth->set('status', 'blocked');
+			$user->logger()->auth()->save([
+				'username'	=> $auth->get('username'),
+				'status'	=> 'blocked'
+			]);
 		}
 
 		// save the changing

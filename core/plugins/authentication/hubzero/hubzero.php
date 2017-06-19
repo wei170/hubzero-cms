@@ -136,7 +136,7 @@ class plgAuthenticationHubzero extends \Hubzero\Plugin\Plugin
 		// Now make sure they haven't made too many failed login attempts
 		if ($this->hasExceededLoginLimit(\Hubzero\User\User::oneOrFail($result->id)))
 		{
-			$response->status = \Hubzero\Auth\Status::FAILURE;
+			$response->status = \Hubzero\Auth\Status::BLOCKED;
 			$response->error_message = Lang::txt('PLG_AUTHENTICATION_HUBZERO_TOO_MANY_ATTEMPTS');
 			return false;
 		}
@@ -233,7 +233,8 @@ class plgAuthenticationHubzero extends \Hubzero\Plugin\Plugin
 	}
 
 	/**
-	 * hasExceededLoginLimit 
+	 * Checks to see if number of the blocked users have exceeded the site
+	 * block attempt limits
 	 * 
 	 * @param   object  $response
 	 * @return  bool

@@ -714,6 +714,7 @@ class plgUserXusers extends \Hubzero\Plugin\Plugin
 	 */
 	public function onUserLoginFailure($response)
 	{
+		if ($response['status'] === \Hubzero\Auth\Status::BLOCKED) return true;
 		// Log attempt to the database
 		Hubzero\User\User::blank()->logger()->auth()->set(
 		[
