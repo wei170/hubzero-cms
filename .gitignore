@@ -4,6 +4,3 @@ app/config/**
 app/site/**
 app/tmp/**
 core/vendor/**
-
-*.swp
-*.swo

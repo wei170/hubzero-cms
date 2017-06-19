@@ -1,4 +1,3 @@
-
 <?php
 /**
  * HUBzero CMS
@@ -136,7 +135,7 @@ function submitbutton(pressbutton)
 
 				<label for="filter-range"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE'); ?>:</label>
 				<select name="range" id="filter-range" class="inputbox" onchange="this.form.submit()">
-					<option value="*"><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE');?></option>
+					<option value=""><?php echo Lang::txt('COM_MEMBERS_OPTION_FILTER_DATE');?></option>
 					<?php echo Html::select('options', Components\Members\Helpers\Admin::getRangeOptions(), 'value', 'text', $this->filters['range']); ?>
 				</select>
 			</div>
